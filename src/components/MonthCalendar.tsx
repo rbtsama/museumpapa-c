@@ -97,7 +97,10 @@ export function MonthCalendar({
       </div>
 
       {legend && statusFor && (
-        <p className="mt-2 text-center text-[10px] text-ink-faint">Dimmed dates can’t be booked</p>
+        <div className="mt-2 flex items-center justify-center gap-4 text-[10px] text-ink-faint">
+          <span className="flex items-center gap-1"><i className="h-1.5 w-1.5 rounded-full" style={{ background: "#2f9163" }} />Available</span>
+          <span className="flex items-center gap-1"><i className="h-1.5 w-1.5 rounded-full" style={{ background: "#c2691a" }} />Limited</span>
+        </div>
       )}
     </div>
   );

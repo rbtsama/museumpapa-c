@@ -115,10 +115,27 @@ function amountFromForm(form?: string, value?: number | null): string | null {
   return null;
 }
 
+// Turn an age window into a short tag so two same-audience rules read clearly
+// (e.g. EcoTarium: "Child (under 2)" is Free while "Child" is 50% off).
+function ageLabel(age?: { min: number | null; max: number | null } | null): string | null {
+  if (!age) return null;
+  const { min, max } = age;
+  if (min != null && max != null) return `${min}–${max}`;
+  if (min != null) return `${min}+`;
+  if (max != null) return `under ${max + 1}`;
+  return null;
+}
+
 function policyLines(s: Supply): { audience: string; amount: string }[] {
   const ap = s.pass.coupon.audience_policies ?? [];
   const lines = ap
-    .map((p) => ({ audience: capWord(p.audience || "Everyone"), amount: amountFromForm(p.form, p.value) }))
+    .map((p) => {
+      const age = ageLabel(p.age_range);
+      return {
+        audience: capWord(p.audience || "Everyone") + (age ? ` (${age})` : ""),
+        amount: amountFromForm(p.form, p.value),
+      };
+    })
     .filter((x): x is { audience: string; amount: string } => !!x.amount);
   if (lines.length) return lines;
   const amt = s.deal.kind === "free" ? "free" : s.deal.kind === "discount" ? "discount" : s.deal.now ?? s.deal.badge;
