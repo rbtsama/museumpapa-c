@@ -32,6 +32,7 @@ export default function AttractionDetail({
   const [editCards, setEditCards] = useState(false);
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [heroErr, setHeroErr] = useState(false);
+  const [heroLoaded, setHeroLoaded] = useState(false);
   const [detailDate, setDetailDate] = useState(date); // detail-local target day
   const [cal, setCal] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -102,16 +103,36 @@ export default function AttractionDetail({
           <button onClick={() => shareApp(attr.name)} aria-label="Share" className="grid h-9 w-9 shrink-0 place-items-center text-ink-soft active:scale-95">
             <ShareGlyph />
           </button>
-          <button onClick={toggleLike} aria-label="Like" className="grid h-9 w-9 shrink-0 place-items-center text-[18px] leading-none active:scale-95">
-            <span className={liked ? "text-[#e0556b]" : "text-ink-soft"}>{liked ? "♥" : "♡"}</span>
+          <button onClick={toggleLike} aria-label="Like" className="grid h-9 w-9 shrink-0 place-items-center text-ink-soft active:scale-95">
+            <HeartGlyph liked={liked} />
           </button>
         </div>
       )}
 
       {/* hero — about a third of the viewport, full-res */}
       <div className="relative">
-        <div className="h-[34vh] max-h-[320px] min-h-[190px] w-full overflow-hidden bg-bg2">
-          {heroSrc && <img src={heroSrc} onError={() => setHeroErr(true)} alt="" className="h-full w-full object-cover" />}
+        <div className="relative h-[34vh] max-h-[320px] min-h-[190px] w-full overflow-hidden bg-bg2">
+          {/* instant low-res placeholder: the local cache is a tiny thumb (KB),
+              blurred up as an LQIP so this big area is never blank while the
+              full-res remote image streams in */}
+          {heroLocal && !heroLoaded && (
+            <img src={heroLocal} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full scale-110 object-cover blur-2xl" />
+          )}
+          {!heroLocal && !heroLoaded && !heroErr && <div className="absolute inset-0 animate-pulse bg-[#e9ddcb]" />}
+          {heroSrc && (
+            <img
+              src={heroSrc}
+              onLoad={() => setHeroLoaded(true)}
+              onError={() => setHeroErr(true)}
+              alt=""
+              className={"absolute inset-0 h-full w-full object-cover transition-opacity duration-500 " + (heroLoaded ? "opacity-100" : "opacity-0")}
+            />
+          )}
+          {!heroLoaded && !heroErr && (
+            <div className="absolute inset-0 grid place-items-center">
+              <span className="h-7 w-7 animate-spin rounded-full border-2 border-white/80 border-t-transparent drop-shadow" />
+            </div>
+          )}
           <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/30 to-transparent" />
         </div>
         <button onClick={onBack} aria-label="Back" className="glass absolute left-3 top-3 grid h-9 w-9 place-items-center rounded-full text-ink shadow-sm active:scale-95">
@@ -122,8 +143,8 @@ export default function AttractionDetail({
           <button onClick={() => shareApp(attr.name)} aria-label="Share" className="glass grid h-9 w-9 place-items-center rounded-full text-ink shadow-sm active:scale-95">
             <ShareGlyph />
           </button>
-          <button onClick={toggleLike} aria-label="Like" className="glass grid h-9 w-9 place-items-center rounded-full text-[18px] leading-none shadow-sm active:scale-95">
-            <span className={liked ? "text-[#e0556b]" : "text-ink-soft"}>{liked ? "♥" : "♡"}</span>
+          <button onClick={toggleLike} aria-label="Like" className="glass grid h-9 w-9 place-items-center rounded-full text-ink shadow-sm active:scale-95">
+            <HeartGlyph liked={liked} />
           </button>
         </div>
       </div>
@@ -304,6 +325,25 @@ function prettyHost(url: string): string {
   } catch {
     return "Website";
   }
+}
+
+function HeartGlyph({ liked }: { liked: boolean }) {
+  // bold stroked heart (the old Unicode ♡ rendered hairline-thin); fills pink
+  // when liked, otherwise a thick outline in the button's currentColor
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill={liked ? "#e0556b" : "none"}
+      stroke={liked ? "#e0556b" : "currentColor"}
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </svg>
+  );
 }
 
 function ShareGlyph() {
