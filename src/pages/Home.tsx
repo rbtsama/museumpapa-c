@@ -86,13 +86,6 @@ export default function Home({
     return [...pinned, ...rest];
   }, [baseRows, sort, filters, noCards, query, wallet.liked]);
 
-  // Aggregate inventory across the list — drives the date strip's per-day
-  // colouring (any place available → green; else limited → amber).
-  const aggStatus = useMemo(() => {
-    const passes = rows.flatMap((r) => r.supplies.map((s) => s.pass));
-    return (iso: string) => bestStatusForDate(passes, iso);
-  }, [rows]);
-
   // With a concrete date picked, split the list: places bookable that day stay
   // on top; full ones sink below a divider (and get a corner badge). Any-day mode
   // skips the split — it lists everything and you open each pass to see its dates.
@@ -178,7 +171,6 @@ export default function Home({
         <DateStrip
           value={date}
           onChange={pickDate}
-          statusFor={noCards ? undefined : aggStatus}
           flexible={flexible}
           onFlexibleToggle={noCards ? undefined : () => setFlexible((f) => !f)}
         />

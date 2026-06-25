@@ -47,7 +47,7 @@ export function AttractionCard({
 
       {/* right: attraction info, then a set-off Offer block */}
       <div className="flex min-w-0 flex-1 flex-col">
-        <h3 className="truncate font-display text-[15px] font-semibold leading-snug text-ink">{a.name}</h3>
+        <h3 className="break-words font-display text-[15px] font-semibold leading-snug text-ink">{a.name}</h3>
 
         {/* attraction info — regular ticket prices, distance, hours/reservation */}
         <div className="mt-1 space-y-0.5">

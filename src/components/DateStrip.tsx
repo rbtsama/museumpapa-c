@@ -1,24 +1,22 @@
 import { useMemo, useState } from "react";
 import { CalendarSheet } from "./CalendarSheet";
 import { addDaysISO, fromISO, todayISO, toISO } from "../lib/dates";
-import type { AvailStatus } from "../lib/supply";
 
 // Date picker (controlled): Any day · Today + next 4 · Pick. Choosing "Any day"
 // dims the days + Pick (still tappable — tap any of them, or Any day again, to
-// leave Any-day mode).
+// leave Any-day mode). The Pick calendar here is a PLAIN date filter (no per-pass
+// availability colouring — that belongs on a specific attraction, not the list).
 const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 export function DateStrip({
   value,
   onChange,
-  statusFor,
   flexible = false,
   onFlexibleToggle,
 }: {
   value: string; // selected ISO date
   onChange: (iso: string) => void;
-  statusFor?: (iso: string) => AvailStatus; // aggregate inventory for colouring
   flexible?: boolean; // "Any day" — list everything, no date filter
   onFlexibleToggle?: () => void;
 }) {
@@ -26,8 +24,11 @@ export function DateStrip({
 
   const { days, min, max } = useMemo(() => {
     const t = todayISO();
+    const td = fromISO(t);
     const days = Array.from({ length: 5 }, (_, i) => addDaysISO(t, i));
-    return { days, min: fromISO(t), max: fromISO(addDaysISO(t, 71)) }; // ~end of snapshot
+    // selectable window is the next two months (plain filter, no inventory)
+    const max = new Date(td.getFullYear(), td.getMonth() + 2, td.getDate());
+    return { days, min: td, max };
   }, []);
 
   const isQuickDay = days.includes(value);
@@ -96,7 +97,6 @@ export function DateStrip({
         min={min}
         max={max}
         value={customDate}
-        statusFor={statusFor}
         onSelect={(d) => onChange(toISO(d))}
         onClose={() => setSheet(false)}
       />
