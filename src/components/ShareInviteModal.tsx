@@ -43,7 +43,7 @@ export function ShareInviteModal({
             <div className="mx-auto mb-3 grid h-14 w-14 place-items-center rounded-full bg-brand/10 text-[30px]">💛</div>
             <h4 className="font-display text-[19px] font-bold text-ink">Enjoyed booking with us?</h4>
             <p className="mx-auto mt-1.5 max-w-[290px] text-[13px] leading-relaxed text-ink-soft">
-              If MuseumPapa made that easier, pass it on — send a friend the app so they can unlock free &amp; half-price museums with their library card too.
+              Help a friend save at museums too.
             </p>
 
             <button
