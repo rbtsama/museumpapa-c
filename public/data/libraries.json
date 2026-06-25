@@ -1,0 +1,4202 @@
+{
+  "_meta": {
+    "built_at": "2026-06-06T15:54:46.319102+00:00",
+    "n_libraries": 59,
+    "pass_borrowing_split": {
+      "town": 21,
+      "open": 38
+    }
+  },
+  "libraries": [
+    {
+      "id": "wakefield",
+      "name": "Lucius Beebe Memorial Library",
+      "town": "Wakefield",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://wakefieldlibrary.org/get-a-library-card/",
+      "pass_page": "https://wakefieldlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://wakefieldlibrary.org/",
+      "address": {
+        "street": "345 Main Street",
+        "city": "Wakefield",
+        "state": "MA",
+        "zip": "01880"
+      },
+      "geo": {
+        "lat": 42.5045951,
+        "lon": -71.071918
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01880"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "hours_note": "Sunday 1–5 Sept–June; closed Sundays in summer.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Anyone is eligible for a library card with valid identification and proof of current address (e.g. a driver’s license and utility bill).",
+          "block": "Anyone is eligible for a library card with valid identification and proof of current address (e.g. a driver’s license and utility bill).\nRegister for a library card from your computer or smartphone to access digital content right away. Sign up for a NOBLE eCard and once your address is verified, you will receive an email with your library card number to instantly access ebooks, audiobooks, magazines, and more.\nThe eCard is for patrons who do not already have a NOBLE public library card and may be upgraded to a physical library card with borrowing privileges by visiting the library.",
+          "source": "https://wakefieldlibrary.org/get-a-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://wakefieldlibrary.org/about/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 9-5; Sun 1-5 (Sept-June)"
+        },
+        "hours_note": {
+          "source": "https://wakefieldlibrary.org/about/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 9-5; Sun 1-5 (Sept-June)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "The library accepts reservations for museum passes from registered Wakefield residents and institutions.",
+          "source": "https://wakefieldlibrary.org/policies/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "reading",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident reading card (same NOBLE network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "stoneham",
+      "name": "Stoneham Public Library",
+      "town": "Stoneham",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://stonehamlibrary.org/get-a-library-card/",
+      "pass_page": "https://stonehamlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://stonehamlibrary.org/",
+      "address": {
+        "street": "431 Main Street",
+        "city": "Stoneham",
+        "state": "MA",
+        "zip": "02180"
+      },
+      "geo": {
+        "lat": 42.4779077,
+        "lon": -71.1006445
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02180"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "10:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "closed",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "NOBLE policy: 'Any Massachusetts resident can register for a library card at any NOBLE library.'",
+          "block": "For Adults and Teens 12+\nIn order to register for a Stoneham Public Library card in person, you must bring a form of ID and/or another document with your current address to the main circulation desk.\nClick HERE to register for an e-card online! An e-card gives you immediate access to our digital resources like hoopla, Libby, and kanopy. Please note that an e-card does not cover museum pass reservations. Once you register, you will receive an email with your e-card barcode number. The e-card is valid for three (3) years. If you would like to check out physical materials, you will need to visit the library to upgrade to a full access card. Make sure you bring a form of ID and an item with your current address. Please note that if you already have a full access library card, you will not be validated to receive an e-card.",
+          "source": "https://www.noblenet.org/library-card/",
+          "source_confidence": "medium"
+        },
+        "hours": {
+          "source": "https://stonehamlibrary.org/about/hours-directions/",
+          "evidence": "Mon, Thu: 10 AM-9 PM; Tue, Wed, Fri: 9 AM-5 PM; Sat/Sun: CLOSED"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Passes circulate or are valid for one day only to library users 18 years of age or older, with a library card in good standing unless otherwise indicated.",
+          "source": "https://stonehamlibrary.org/books-more/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "reading",
+      "name": "Reading Public Library",
+      "town": "Reading",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://www.readingpl.org/get-a-library-card/",
+      "pass_page": "https://readingpl.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.readingpl.org/",
+      "address": {
+        "street": "64 Middlesex Avenue",
+        "city": "Reading",
+        "state": "MA",
+        "zip": "01867"
+      },
+      "geo": {
+        "lat": 42.5260974,
+        "lon": -71.1101767
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01867"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "13:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "hours_note": "Sunday hours early Oct–Memorial Day; closed Sundays through summer.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Stop by the Borrower Services desk to present identification and proof of residency.",
+          "block": "Get a Library Card - It's Easy!\nReading Public Library Card\nStop by the Borrower Services desk to present identification and proof of residency. You will select a password to manage your account, access online resources, and reserve museum passes.\nThat’s it! We’ll give you a library card right away!",
+          "source": "https://www.readingpl.org/get-a-library-card/",
+          "source_confidence": "medium"
+        },
+        "hours": {
+          "source": "https://www.readingpl.org/library-hours",
+          "evidence": "Tue-Wed 9-9; Thu 1-9; Fri-Sat 9-5; Sun Closed (through Sept)"
+        },
+        "hours_note": {
+          "source": "https://www.readingpl.org/library-hours",
+          "evidence": "Tue-Wed 9-9; Thu 1-9; Fri-Sat 9-5; Sun Closed (through Sept)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Book online or call (781) 944-0840. One pass per family per day and two passes per family per week during school vacation weeks.",
+          "source": "https://readingpl.org/museum-passes/",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "boston-by-foot",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "woburn",
+      "name": "Woburn Public Library",
+      "town": "Woburn",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://woburnpubliclibrary.org/services/how-to-get-a-library-card/",
+      "pass_page": "https://woburnpubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://woburnpubliclibrary.org/",
+      "address": {
+        "street": "45 Pleasant Street",
+        "city": "Woburn",
+        "state": "MA",
+        "zip": "01801"
+      },
+      "geo": {
+        "lat": 42.4793008,
+        "lon": -71.1545179
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01801"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:30",
+        "saturday": "09:00-17:30",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "To get a free Library Card, you must be a Massachusetts resident.",
+          "block": "To get a free Library Card, you must\nbe a Massachusetts resident.\nbring a picture I.D. with current address or a picture I.D. and a bill/mail received at your current address.*\nbe at least 4 years old OR be able to write your own full name (whichever comes first).\nhave a parent or guardian sign your application if you are under 12 years old.",
+          "source": "https://woburnpubliclibrary.org/services/how-to-get-a-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://woburnpubliclibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5:30; Sun Closed"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Passes are available to WOBURN RESIDENTS ONLY and may be reserved with a valid Minuteman Library Network card.",
+          "source": "https://woburnpubliclibrary.org/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/28",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "lynnfield",
+      "name": "Lynnfield Public Library",
+      "town": "Lynnfield",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://lynnfieldlibrary.org/about/get-a-library-card/",
+      "pass_page": "https://lynnfieldlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://lynnfieldlibrary.org/",
+      "address": {
+        "street": "18 Summer St",
+        "city": "Lynnfield",
+        "state": "MA",
+        "zip": "01940"
+      },
+      "geo": {
+        "lat": 42.5392872,
+        "lon": -71.0477596
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01940"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Library cards are free and available regardless of where you live in Massachusetts.",
+          "block": "Requests for full access library cards can be sent to lfdcirc@noblenet.org . Please include your name, address, phone number, and birth date for any person requesting a card. You can also download and email an application.\nRequests may also be made in person, we cannot take card requests over the phone.\nLibrary cards are free and available regardless of where you live in Massachusetts. In addition to the above information, proof of current mailing address (license, checkbook, utility bill, etc.) is needed. This can be done electronically by including a picture of an ID/license or a piece of mail with your request. We just need to see your name and address, anything else can be blocked.",
+          "source": "https://lynnfieldlibrary.org/about/get-a-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://lynnfieldlibrary.org/branch/lynnfield-public-library/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun Closed"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Additionally, museum passes are only available for those with full access cards.",
+          "source": "https://lynnfieldlibrary.org/about/get-a-library-card/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "peabody",
+      "name": "Peabody Institute Library",
+      "town": "Peabody",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://peabodylibrary.org/librarycard/",
+      "pass_page": "https://peabodylibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://peabodylibrary.org/",
+      "address": {
+        "street": "82 Main Street",
+        "city": "Peabody",
+        "state": "MA",
+        "zip": "01960"
+      },
+      "geo": {
+        "lat": 42.5249222,
+        "lon": -70.9242115
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01960"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-13:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "hours_note": "Main library. Sunday Labor Day–Memorial Day only; South/West branches differ.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Anyone can get a Peabody Institute Library card at any of our 3 locations! Just show library staff a photo ID and proof of residence, and fill out a short application.",
+          "block": "How can I get a Library Card?\nAnyone can get a Peabody Institute Library card at any of our 3 locations! Just show library staff a photo ID and proof of residence, and fill out a short application. Children 12 and under must have a parent or guardian permission and signature.\nCan I get a Library Card if I don't live in Peabody?\nYes! We just need to see proof of your address. If you live in another NOBLE library community, you can use your card at the Peabody Institute Library, but you can only have one card in the NOBLE network. Please be aware that some online resources are only available for Peabody residents.",
+          "source": "https://peabodylibrary.org/librarycard/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://peabodylibrary.org/",
+          "evidence": "Main: Mon-Thu 9-9, Fri 9-1, Sat 9-5, Sun 1-5 (closed summer)"
+        },
+        "hours_note": {
+          "source": "https://peabodylibrary.org/",
+          "evidence": "Main: Mon-Thu 9-9, Fri 9-1, Sat 9-5, Sun 1-5 (closed summer)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Museum passes may be reserved in advance with a library card in good standing. (No town restriction stated; a NOBLE card requires a MA connection -> any MA resident.)",
+          "source": "https://peabodylibrary.org/museumpasses/",
+          "confidence": null
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "melrose",
+      "name": "Melrose Public Library",
+      "town": "Melrose",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://melrosepubliclibrary.org/services/borrow/library-cards/",
+      "pass_page": "https://melrosepubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://melrosepubliclibrary.org/",
+      "address": {
+        "street": "69 West Emerson Street",
+        "city": "Melrose",
+        "state": "MA",
+        "zip": "02176"
+      },
+      "geo": {
+        "lat": 42.4592463,
+        "lon": -71.0665931
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02176"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "10:00-21:00",
+        "thursday": "10:00-21:00",
+        "friday": "10:00-17:00",
+        "saturday": "10:00-17:00",
+        "sunday": "14:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "To register for a physical library card, please bring photo identification with proof of your current address to the Main Desk and fill out our registration form.",
+          "block": "To register for a physical library card, please bring photo identification with proof of your current address to the Main Desk and fill out our registration form. Guardians of children ages 4 and older may register them for a library card with proof of address and a signature. Local students ages 11-18 may register with school identification or with a guardian.\nIf you do not have a current permanent address, you may get a local use Melrose Public Library card.\nIf you are a Massachusetts resident without a library card and would like to obtain an eCard, granting access to digital materials only, please apply online .",
+          "source": "https://melrosepubliclibrary.org/services/borrow/library-cards/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://melrosepubliclibrary.org/",
+          "evidence": "Mon-Thu 10-9; Fri-Sat 10-5; Sun 2-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Did you know that Melrose residents can reserve Museum Passes with their library card? (only explicit who-statement, from the library's official Facebook; the .org pass pages omit eligibility)",
+          "source": "https://melrosepubliclibrary.org/museum-pass-page/",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "data_quality_flags": [
+        {
+          "code": "probe_open_vs_town_policy",
+          "severity": "warn",
+          "message": "Card cross-test accepted a non-resident network card, but the stated policy is town-residents-only — verify."
+        }
+      ]
+    },
+    {
+      "id": "saugus",
+      "name": "Saugus Public Library",
+      "town": "Saugus",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://www.sauguspubliclibrary.org/explore/library-card/",
+      "pass_page": "https://sauguspubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.sauguspubliclibrary.org/",
+      "address": {
+        "street": "295 Central Street",
+        "city": "Saugus",
+        "state": "MA",
+        "zip": "01906"
+      },
+      "geo": {
+        "lat": 42.4653264,
+        "lon": -71.0101808
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "ma_resident",
+      "resident_zips": [
+        "01906"
+      ],
+      "hours": {
+        "monday": "09:00-20:00",
+        "tuesday": "09:00-20:00",
+        "wednesday": "09:00-20:00",
+        "thursday": "09:00-20:00",
+        "friday": "09:00-16:30",
+        "saturday": "09:00-16:30",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "however, NOBLE (North of Boston Library Exchange) libraries will issue a library card to anyone with a picture ID and proof of a current address.",
+          "block": "Who can apply?\nAny Massachusetts resident may register and use any public library in the Commonwealth. It’s easier if you register in the town where you live; however, NOBLE (North of Boston Library Exchange) libraries will issue a library card to anyone with a picture ID and proof of a current address. Once you have a library card, you can use it at most other NOBLE libraries without the need to get multiple cards.",
+          "source": "https://www.sauguspubliclibrary.org/explore/library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.sauguspubliclibrary.org/visit/",
+          "evidence": "Mon-Thu 9-8; Fri-Sat 9-4:30; Sun Closed"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "A valid NOBLE library card in good standing is required when placing a reservation.",
+          "source": "https://www.sauguspubliclibrary.org/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "malden",
+      "name": "Malden Public Library",
+      "town": "Malden",
+      "network": "MBLN",
+      "platform": "assabet",
+      "consortium_label": "MBLN",
+      "card_issuance_group": "MBLN",
+      "card_issuance_groups": [
+        "MBLN"
+      ],
+      "card_auth_groups": [
+        "MBLN"
+      ],
+      "card_page": "https://maldenpubliclibrary.org/about/policies/library-cards/",
+      "pass_page": "https://maldenpubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://maldenpubliclibrary.org/",
+      "address": {
+        "street": "36 Salem St.",
+        "city": "Malden",
+        "state": "MA",
+        "zip": "02148"
+      },
+      "geo": {
+        "lat": 42.4276751,
+        "lon": -71.0660775
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02148"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-18:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "To apply for a library card, you do not have to be a resident of Malden, but you do have to be a resident of Massachusetts.",
+          "block": "To apply for a library card, you do not have to be a resident of Malden, but you do have to be a resident of Massachusetts. People applying for a library card must provide a valid photo ID, and an accepted form of proof of current address. (If your photo ID has your current address, then that is all you need.)",
+          "source": "https://maldenpubliclibrary.org/about/policies/library-cards/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://maldenpubliclibrary.org/about/location-hours/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-6; Sun Closed"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Must be a Malden Resident",
+          "source": "https://maldenpubliclibrary.org/about/policies/museum-pass-policy/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "bpl",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident bpl card (same MBLN network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "medford",
+      "name": "Medford Public Library",
+      "town": "Medford",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://medfordlibrary.org/about-us/policies/borrowing-policies/",
+      "pass_page": "https://medfordlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://medfordlibrary.org/",
+      "address": {
+        "street": "111 High Street",
+        "city": "Medford",
+        "state": "MA",
+        "zip": "02155"
+      },
+      "geo": {
+        "lat": 42.4197301,
+        "lon": -71.1135494
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02155"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Library cards are issued to Massachusetts residents who present a piece of identification with their name and current address.",
+          "block": "Library cards are issued to Massachusetts residents who present a piece of identification with their name and current address. Children under age 18 may obtain a card if accompanied by a parent or guardian. 7th grade and older must be accompanied by a parent or guardian, or present signed permission in writing and a piece of identification with name and address. Cards issued in Medford may be used at any library in the Minuteman Library Network.\nIdentification may include a valid driver’s license, imprinted bank check, piece of delivered non-personal mail such as a bill, bank statement, or magazine with a mailing label.\nOut-of-state residents who work in Massachusetts, are students in Massachusetts, own property in Massachusetts, or are living in temporarily in Massachusetts (for a minimum of 8 weeks), may register for a card. Work ID that includes a current mailing address, or a student ID that includes a current mailing address, or a piece of delivered non-personal mail is required for verification of a Massachusetts mailing address.",
+          "source": "https://medfordlibrary.org/about-us/policies/borrowing-policies/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://medfordlibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 9-5; Sun Closed"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Borrowing policy lists Museum Passes (1 day) with no Medford-only restriction stated; Minuteman card required.",
+          "source": "https://medfordlibrary.org/about-us/policies/borrowing-policies/",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "burlington",
+      "name": "Burlington Public Library",
+      "town": "Burlington",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.burlingtonpubliclibrary.org/186/Get-a-Library-Card",
+      "pass_page": "https://burlington.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.burlingtonpubliclibrary.org/",
+      "address": {
+        "street": "29 Center Street",
+        "city": "Burlington",
+        "state": "MA",
+        "zip": "01803"
+      },
+      "geo": {
+        "lat": 42.5061899,
+        "lon": -71.1938589
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01803"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "10:00-21:00",
+        "thursday": "10:00-21:00",
+        "friday": "10:00-18:00",
+        "saturday": "10:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "You can obtain a library card at the Burlington Public Library if you are a: Resident of any Massachusetts municipality whose library is certified by the Massachusetts Board of Library Commissioners; you may register with the Burlington Public Library and receive borrowing privileges within the Merrimack Valley Library Consortium (MVLC).",
+          "block": "Obtaining a Library Card\nYou can obtain a library card at the Burlington Public Library if you are a:\nResident of any Massachusetts municipality whose library is certified by the Massachusetts Board of Library Commissioners; you may register with the Burlington Public Library and receive borrowing privileges within the Merrimack Valley Library Consortium (MVLC).\nOut-of-state resident who either own property, work, or attend school in Burlington.\nProof of Identity and Address are required to obtain a Burlington Public Library Card.",
+          "source": "https://www.burlingtonpubliclibrary.org/186/Get-a-Library-Card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.burlingtonpubliclibrary.org/",
+          "evidence": "Mon-Thu 10-9; Fri 10-6; Sat 10-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Museum passes may be borrowed by anyone holding a library card in good standing.",
+          "source": "https://www.burlingtonpubliclibrary.org/DocumentCenter/View/177",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "north-reading",
+      "name": "Flint Memorial Library",
+      "town": "North Reading",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://flintmemoriallibrary.org/home/borrow-materials/",
+      "pass_page": "https://flintmemoriallibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://flintmemoriallibrary.org/",
+      "address": {
+        "street": "147 Park Street",
+        "city": "North Reading",
+        "state": "MA",
+        "zip": "01864"
+      },
+      "geo": {
+        "lat": 42.5746953,
+        "lon": -71.07628
+      },
+      "card_eligibility": "town_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01864"
+      ],
+      "hours": {
+        "monday": "10:00-20:00",
+        "tuesday": "10:00-20:00",
+        "wednesday": "10:00-17:00",
+        "thursday": "10:00-20:00",
+        "friday": "10:00-17:00",
+        "saturday": "10:00-17:00",
+        "sunday": "closed"
+      },
+      "hours_note": "Saturday open Labor Day–Memorial Day only.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "A library card is available to all North Reading residents.",
+          "block": "Your library card or a valid ID must be presented to withdraw materials.\nA library card is available to all North Reading residents. To obtain a card, you will need a photo ID, preferably a driver’s license with the correct address. If the address is not current, please provide a lease, utility bill, or another document with the current North Reading address.",
+          "source": "https://flintmemoriallibrary.org/home/borrow-materials/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://flintmemoriallibrary.org/home/hours-and-directions/",
+          "evidence": "Mon/Tue/Thu 10-8; Wed/Fri 10-5; Sat 10-5 seasonal"
+        },
+        "hours_note": {
+          "source": "https://flintmemoriallibrary.org/home/hours-and-directions/",
+          "evidence": "Mon/Tue/Thu 10-8; Wed/Fri 10-5; Sat 10-5 seasonal"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Any person residing in Massachusetts may be eligible for a free borrower's card, which will be honored by all member libraries of the Merrimack Valley Library Consortium (MVLC). (library-wide borrowing eligibility; pass page states no town restriction)",
+          "source": "https://flintmemoriallibrary.org/wp-content/uploads/2024/11/Patron-Registration-Policy-1-1.pdf",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "the-aviation-museum-of-new-hampshire",
+          "verdict": "own_card_only",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/28",
+          "evidence": "non-resident wilmington card (same MVLC network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      },
+      "data_quality_flags": [
+        {
+          "code": "probe_owncard_vs_open_policy",
+          "severity": "warn",
+          "message": "Card cross-test was rejected, but the stated policy is open to the network — verify."
+        }
+      ]
+    },
+    {
+      "id": "wilmington",
+      "name": "Wilmington Memorial Library",
+      "town": "Wilmington",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://wilmlibrary.org/library-card/",
+      "pass_page": "https://wilmlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://wilmlibrary.org/",
+      "address": {
+        "street": "175 Middlesex Ave.",
+        "city": "Wilmington",
+        "state": "MA",
+        "zip": "01887"
+      },
+      "geo": {
+        "lat": 42.5575285,
+        "lon": -71.1640026
+      },
+      "card_eligibility": "town_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01887"
+      ],
+      "hours": {
+        "monday": "09:00-20:30",
+        "tuesday": "09:00-20:30",
+        "wednesday": "09:00-20:30",
+        "thursday": "09:00-20:30",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Proper identification is required to apply for a Wilmington Memorial Library (WML) card.",
+          "block": "Residents of Wilmington\nProper identification is required to apply for a Wilmington Memorial Library (WML) card. The following documents are acceptable\nMassachusetts driver’s license or license with a new address sticker attached\nMassachusetts car registration, state ID or passport\nWilmington property tax bill, lease/mortgage bill or utility bill\nChildren under age 14 are required to have a parent or legal guardian present when applying and a parent or legal guardian must sign the application. Children age 14 and over are required to present proper identification (school I.D.) or be accompanied by a parent or legal guardian with acceptable identification.",
+          "source": "https://wilmlibrary.org/library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://wilmlibrary.org/",
+          "evidence": "Mon-Thu 9-8:30; Fri-Sat 9-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Discount passes ... may be borrowed by patrons with an MVLC library card in good standing.",
+          "source": "https://wilmlibrary.org/services/mp/",
+          "confidence": "high"
+        },
+        "probe": null
+      }
+    },
+    {
+      "id": "winchester",
+      "name": "Winchester Public Library",
+      "town": "Winchester",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.winpublib.org/librarycard/",
+      "pass_page": "https://www.winpublib.org/museumpasses/",
+      "website": "https://www.winpublib.org/",
+      "address": {
+        "street": "80 Washington Street",
+        "city": "Winchester",
+        "state": "MA",
+        "zip": "01890"
+      },
+      "geo": {
+        "lat": 42.4523015,
+        "lon": -71.1341417
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "town_resident",
+      "resident_zips": [
+        "01890"
+      ],
+      "hours": {
+        "monday": "09:30-21:00",
+        "tuesday": "09:30-21:00",
+        "wednesday": "09:30-21:00",
+        "thursday": "09:30-21:00",
+        "friday": "09:30-17:30",
+        "saturday": "09:30-17:30",
+        "sunday": "14:00-17:00"
+      },
+      "hours_note": "Sunday 2–5 Oct–May; closed Sundays in summer.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Present a photo ID and proof of your current address at any Circulation Desk. Massachusetts residency is required to get your library card and some services are restricted to Winchester residents only.",
+          "block": "Get a Library Card\nIt’s Easy!\nPresent a photo ID and proof of your current address at any Circulation Desk. Massachusetts residency is required to get your library card and some services are restricted to Winchester residents only. Complete requirements are available in our policy manual .",
+          "source": "https://www.winpublib.org/librarycard/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.winpublib.org/hours/",
+          "evidence": "Mon-Thu 9:30-9; Fri-Sat 9:30-5:30; Sun 2-5 Oct-May"
+        },
+        "hours_note": {
+          "source": "https://www.winpublib.org/hours/",
+          "evidence": "Mon-Thu 9:30-9; Fri-Sat 9:30-5:30; Sun 2-5 Oct-May"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Passes are available to Winchester residents only.",
+          "source": "https://www.winpublib.org/museumpasses/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "battleship-cove",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "bpl",
+      "name": "Boston Public Library",
+      "town": "Boston",
+      "network": "MBLN",
+      "platform": "libcal",
+      "consortium_label": "MBLN",
+      "card_issuance_group": "MBLN",
+      "card_issuance_groups": [
+        "MBLN"
+      ],
+      "card_auth_groups": [
+        "BPL",
+        "MBLN"
+      ],
+      "card_page": "https://www.bpl.org/faq/eligibility/",
+      "pass_page": "https://bpl.libcal.com/passes",
+      "website": "https://www.bpl.org/",
+      "address": {
+        "street": "700 Boylston St.",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02116"
+      },
+      "geo": {
+        "lat": 42.3493298,
+        "lon": -71.0786547
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02108",
+        "02109",
+        "02110",
+        "02111",
+        "02113",
+        "02114",
+        "02115",
+        "02116",
+        "02118",
+        "02119",
+        "02120",
+        "02121",
+        "02122",
+        "02124",
+        "02125",
+        "02126",
+        "02127",
+        "02128",
+        "02129",
+        "02130",
+        "02131",
+        "02132",
+        "02134",
+        "02135",
+        "02136"
+      ],
+      "hours": {
+        "monday": "09:00-20:00",
+        "tuesday": "09:00-20:00",
+        "wednesday": "09:00-20:00",
+        "thursday": "09:00-20:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "11:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Come with picture ID and proof of Massachusetts residency, which can be either a physical document or an official document available on an electronic device. A Massachusetts driver’s license or ID card satisfies both requirements.",
+          "block": "Apply for a physical library card at the circulation desk in any BPL location.\nCome with picture ID and proof of Massachusetts residency, which can be either a physical document or an official document available on an electronic device. A Massachusetts driver’s license or ID card satisfies both requirements.\nIf you don’t have a Massachusetts driver’s license or state ID, you can bring some other form of ID that shows your picture and signature along with official mail sent to you at a Massachusetts address.",
+          "source": "https://www.bpl.org/faq/eligibility/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.bpl.org/locations/central/",
+          "evidence": "Mon-Thu 9-8; Fri-Sat 9-5; Sun 11-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "You need an active physical library card to reserve a pass. You cannot use an eCard to reserve a pass. To reserve museum passes, upgrade your eCard at any BPL location by bringing a photo ID and proof of your Massachusetts residency. A state-issued ID or driver's license meets both requirements.",
+          "source": "https://www.bpl.org/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": null
+      }
+    },
+    {
+      "id": "beverly",
+      "name": "Beverly Public Library",
+      "town": "Beverly",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://beverlypubliclibrary.org/services/borrowing/",
+      "pass_page": "https://beverlypubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://beverlypubliclibrary.org/",
+      "address": {
+        "street": "32 Essex Street",
+        "city": "Beverly",
+        "state": "MA",
+        "zip": "01915"
+      },
+      "geo": {
+        "lat": 42.5509176,
+        "lon": -70.8766929
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01915"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "hours_note": "Sunday open Sept–Memorial Day (see site for hours); closed Sundays in summer.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Honors library cards from other Massachusetts libraries (NOBLE member: any MA resident).",
+          "block": "To borrow library materials, patrons should present a NOBLE registered library card. The library honors library cards from other Massachusetts libraries, but the patron must also register with the Beverly Public Library.\nTo get a library card:\nFill out a registration form. Printable versions: ( English ) ( Portuguese ) ( Spanish ) ( Haitian ) ( Albanian ) ( French ).\nPresent photo identification with name and proof of current address (e.g. a driver’s license and utility bill).\nParents or guardians must show their I.D. when registering children. There is no minimum age limit and no requirement that children can read or write their name.\nPatrons may apply for an eCard. This card allows access to electronic resources only.\nThere is no charge for a library card. However, should a card be lost, patrons are responsible for all the items checked out on the card up to the date that it is reported missing. Patrons must show identification to replace a lost card.",
+          "source": "https://beverlypubliclibrary.org/services/borrowing/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://beverlypubliclibrary.org/main-library/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun Closed (summer)"
+        },
+        "hours_note": {
+          "source": "https://beverlypubliclibrary.org/main-library/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun Closed (summer)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "You must have a library card to reserve a pass. (no town restriction stated)",
+          "source": "https://beverlypubliclibrary.org/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "danvers",
+      "name": "Peabody Institute Library of Danvers",
+      "town": "Danvers",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://danverslibrary.org/library-policies-information/",
+      "pass_page": "https://danverslibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://danverslibrary.org/",
+      "address": {
+        "street": "15 Sylvan Street",
+        "city": "Danvers",
+        "state": "MA",
+        "zip": "01923"
+      },
+      "geo": {
+        "lat": 42.5616613,
+        "lon": -70.9410042
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01923"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "hours_note": "Sunday 1–5 Nov–Mar only.",
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "A patron's library account has to be in good standing to reserve or pick up passes. Patrons must be 16 years of age or older in order to reserve a pass. Patrons must have their library card in order to make a reservation. (No Danvers-resident restriction stated -> MA floor.)",
+          "source": "https://danverslibrary.org/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/25",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "_evidence": {
+        "hours": {
+          "source": "https://danverslibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5 Nov-Mar"
+        },
+        "hours_note": {
+          "source": "https://danverslibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5 Nov-Mar"
+        }
+      }
+    },
+    {
+      "id": "lynn",
+      "name": "Lynn Public Library",
+      "town": "Lynn",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://lynnpubliclibrary.org/get-a-library-card",
+      "pass_page": "https://lynnpubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://lynnpubliclibrary.org/",
+      "address": {
+        "street": "5 North Common St.",
+        "city": "Lynn",
+        "state": "MA",
+        "zip": "01902"
+      },
+      "geo": {
+        "lat": 42.4644621,
+        "lon": -70.9536275
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01901",
+        "01902",
+        "01904",
+        "01905"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "hours_note": "School-year hours (Sept–mid-June); summer schedule differs.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "ID + current-address only; NOBLE policy = any MA resident.",
+          "block": "NOBLE now offers eCard service! Patrons, complete your registration online using this form , no need to visit the library.\nOnce your address is verified, you will receive an email containing your digital library card number. This number can be used to access your account, borrow eBooks through Libby/Overdrive, and access other digital resources. eCard accounts are valid for 3 years at a time and can be upgraded to a traditional account by visiting any NOBLE library with your I.D.",
+          "source": "https://lynnpubliclibrary.org/get-a-library-card",
+          "source_confidence": "low"
+        },
+        "hours": {
+          "source": "https://lynnpubliclibrary.org/hours-and-directions/",
+          "evidence": "Sep-mid Jun: Mon-Thu 9-9, Fri-Sat 9-5; summer differs"
+        },
+        "hours_note": {
+          "source": "https://lynnpubliclibrary.org/hours-and-directions/",
+          "evidence": "Sep-mid Jun: Mon-Thu 9-9, Fri-Sat 9-5; summer differs"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "LYNN RESIDENTS who are age 18 or older and have an account in good standing",
+          "source": "https://lynnpubliclibrary.org/museum-pass-program",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "marblehead",
+      "name": "Abbot Public Library",
+      "town": "Marblehead",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://abbotlibrary.org/about/general-info/",
+      "pass_page": "https://abbotlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://abbotlibrary.org/",
+      "address": {
+        "street": "235 Pleasant Street",
+        "city": "Marblehead",
+        "state": "MA",
+        "zip": "01945"
+      },
+      "geo": {
+        "lat": 42.4964016,
+        "lon": -70.8632383
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01945"
+      ],
+      "hours": {
+        "monday": "09:30-21:00",
+        "tuesday": "09:30-18:00",
+        "wednesday": "09:30-21:00",
+        "thursday": "12:00-18:00",
+        "friday": "09:30-17:00",
+        "saturday": "09:30-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Library cards are available free of charge to residents of Massachusetts and individuals who work or attend school in Marblehead.",
+          "block": "Library Card Eligibility & Registration\n1.1 Eligibility\nLibrary cards are available free of charge to residents of Massachusetts and individuals who work or attend school in Marblehead. Non-residents may be eligible for a card under specific circumstances.\n1.2 Registration\nTo obtain a library card, applicants must:\nComplete a registration form.\nPresent valid photo identification.\nProvide proof of current address.",
+          "source": "https://abbotlibrary.org/about/general-info/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://abbotlibrary.org/what-we-offer/get-a-museum-pass/",
+          "evidence": "Monday: 9:30 am – 9:00 pm; Tuesday: 9:30 am – 6:00 pm; Wednesday: 9:30 am – 9:00 pm; Thursday: 12:00 – 6:00 pm; Friday: 9:30 am – 5:00 pm; Saturday: 9:30 am – 5:00 pm; Sunday: Closed (verified 2026-05-29 from museum-pass page)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "The Abbot Public Library loans free or discounted admission passes to educational, cultural, or recreational organizations to any Library patron in good standing.",
+          "source": "https://abbotlibrary.org/wp-content/uploads/2022/05/MuseumPassPolicy_November-2021.pdf",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wakefield",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wakefield card (same NOBLE network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "everett",
+      "name": "Everett Public Libraries",
+      "town": "Everett",
+      "network": "NOBLE",
+      "platform": "assabet",
+      "consortium_label": "NOBLE",
+      "card_issuance_group": "NOBLE",
+      "card_issuance_groups": [
+        "NOBLE"
+      ],
+      "card_auth_groups": [
+        "NOBLE"
+      ],
+      "card_page": "https://www.everettpubliclibraries.org/get-a-library-card/",
+      "pass_page": "https://everettpubliclibraries.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.everettpubliclibraries.org/",
+      "address": {
+        "street": "410 Broadway",
+        "city": "Everett",
+        "state": "MA",
+        "zip": "02149"
+      },
+      "geo": {
+        "lat": 42.4060155,
+        "lon": -71.0568179
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02149"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "10:00-14:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "A library card is totally free, and anyone can get one! All you need is a form of photo I.D. and proof of address.",
+          "block": "Having a library card will allow you to bring the library’s materials home, give you access to our online learning resources, and more. A library card is totally free, and anyone can get one! All you need is a form of photo I.D. and proof of address.\nIf you are under 18 years old and you go to school in Everett, you can show us one of the following to get your library card: School I.D., School uniform, School planner, Report card, School email with your full name, Online school profile.\nIf you go to school outside of Everett, you’ll need to show us a proof of address. If you do not have one of the above items, bring your parent or guardian and their I.D. and proof of address.",
+          "source": "https://www.everettpubliclibraries.org/get-a-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.everettpubliclibraries.org/get-a-library-card/",
+          "evidence": "Parlin: Mon-Thu 9-9; Fri 9-5; Sat 10-2"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town_first",
+          "evidence": "Non-Everett residents with a valid NOBLE library card may borrow a museum pass on the day of its use, provided the pass has not already been reserved for use that day. [DUAL-TIER: Everett residents reserve in advance]",
+          "source": "https://www.everettpubliclibraries.org/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "museum-of-science",
+          "verdict": "own_card_only",
+          "prober_card": "reading",
+          "probed_date": "2026-05-10",
+          "evidence": "Same-network rejection: everett is NOBLE; a NOBLE card (reading) was rejected at everett's museum-of-science booking (backup/cross_network_tests.json, 2026-05-10). Same-network sibling card refused at card-validation => requires everett's own card (card-ownership), not town residency.",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea Public Library",
+      "town": "Chelsea",
+      "network": "MBLN",
+      "platform": "assabet",
+      "consortium_label": "MBLN",
+      "card_issuance_group": "MBLN",
+      "card_issuance_groups": [
+        "MBLN"
+      ],
+      "card_auth_groups": [
+        "MBLN"
+      ],
+      "card_page": "https://www.chelseama.gov/departments/library/",
+      "pass_page": "https://chelseama.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.chelseama.gov/",
+      "address": {
+        "street": "569 Broadway",
+        "city": "Chelsea",
+        "state": "MA",
+        "zip": "02150"
+      },
+      "geo": {
+        "lat": 42.393559,
+        "lon": -71.0320598
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02150"
+      ],
+      "hours": {
+        "monday": "09:00-20:00",
+        "tuesday": "09:00-20:00",
+        "wednesday": "09:00-20:00",
+        "thursday": "09:00-20:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "A library card is needed to borrow items or use public computers. In order to obtain a card: The child must be present. The child must be enrolled in school (preschool is considered school). Verification of address is required. A parent or guardian should be present for a child under 10.",
+          "block": "The Children’s Department is reserved for children, their parents, guardians, teachers, and caregivers. A library card is needed to borrow items or use public computers. In order to obtain a card: The child must be present. The child must be enrolled in school (preschool is considered school). Verification of address is required. A parent or guardian should be present for a child under 10. Responsibility for all materials borrowed on a library card lies with the cardholder and/or their parent or guardian. Library staff do not monitor the selection of materials and are not responsible for items that are checked out.",
+          "source": "https://www.chelseama.gov/departments/library/",
+          "source_confidence": "low"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "With your Chelsea Library card, you can also access passes to other museums that are held by other libraries within the MBLN network. (no Chelsea-resident restriction)",
+          "source": "https://chelseama.qscend.com/311/knowledgebase/article/1614",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "bpl",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident bpl card (same MBLN network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "billerica",
+      "name": "Billerica Public Library",
+      "town": "Billerica",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://billericalibrary.org/borrowing/library-cards/",
+      "pass_page": "https://billericalibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://billericalibrary.org/",
+      "address": {
+        "street": "15 Concord Road",
+        "city": "Billerica",
+        "state": "MA",
+        "zip": "01821"
+      },
+      "geo": {
+        "lat": 42.5583785,
+        "lon": -71.2699681
+      },
+      "card_eligibility": "town_or_works",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01821"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "A physical Billerica Public Library card is available to all Billerica residents. Property owners and those employed in town may also obtain a card if they are not already part of the Merrimack Valley Library Consortium (MVLC).",
+          "block": "A physical Billerica Public Library card is available to all Billerica residents. Property owners and those employed in town may also obtain a card if they are not already part of the Merrimack Valley Library Consortium (MVLC). The Library will follow MVLC policies and procedures when registering patrons who are residents of MVLC communities.",
+          "source": "https://billericalibrary.org/borrowing/library-cards/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://billericalibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Passes may be borrowed by any Massachusetts resident with a library card.",
+          "source": "https://billericalibrary.org/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "topsfield",
+      "name": "Topsfield Town Library",
+      "town": "Topsfield",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://topsfieldlibrary.org/borrow/get-a-library-card/",
+      "pass_page": "https://topsfieldlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://topsfieldlibrary.org/",
+      "address": {
+        "street": "1 South Common Street",
+        "city": "Topsfield",
+        "state": "MA",
+        "zip": "01983"
+      },
+      "geo": {
+        "lat": 42.6409094,
+        "lon": -70.949669
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01983"
+      ],
+      "hours": {
+        "monday": "10:00-19:00",
+        "tuesday": "10:00-19:00",
+        "wednesday": "10:00-19:00",
+        "thursday": "10:00-19:00",
+        "friday": "10:00-14:00",
+        "saturday": "10:00-14:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "All Topsfield residents aged six and older are eligible to receive a library card from the Topsfield Town Library.",
+          "block": "How do I get a library card?\nAll Topsfield residents aged six and older are eligible to receive a library card from the Topsfield Town Library. Residents can apply for an eCard from home using our eCard Registration Form , or register in-person at the library’s Circulation Desk. View our welcome brochure here.\nNot from Topsfield? Resident of Town in the Merrimack Valley Library Consortium (MVLC): Library card holders in good standing from any town within the Merrimack Valley Library Consortium (MVLC) can borrow materials from the Topsfield Town Library. Residents of other towns within the MVLC that do not have an active library account can apply for and receive a library card in-person at the Topsfield Town Library Circulation Desk; however, residents of other towns within the MVLC are encouraged to receive a library card at the library in their town of residence or to apply online using the MVLC eCard registration form to ensure unfettered access to all e-resources offered by the home library. Resident of Towns not in the MVLC: Massachusetts residents of towns outside of the MVLC can apply for a library card in-person at the Topsfield Town Library, or online using the MVLC eCard registration form . Living Out of State but Working in Topsfield: The Topsfield Town Library will issue a local-use only library card to those who work in Topsfield but live outside of the Commonwealth of Massachusetts.",
+          "source": "https://topsfieldlibrary.org/borrow/get-a-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://topsfieldlibrary.org/",
+          "evidence": "Mon-Thu 10-7; Fri-Sat 10-2"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Passes are available to anyone with a Massachusetts library card in good standing.",
+          "source": "https://topsfieldlibrary.org/borrow/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "boxford",
+      "name": "Boxford Town Library",
+      "town": "Boxford",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.boxfordma.gov/210/Get-a-Library-Card",
+      "pass_page": "https://boxfordlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.boxfordma.gov/",
+      "address": {
+        "street": "7A Spofford Road",
+        "city": "Boxford",
+        "state": "MA",
+        "zip": "01921"
+      },
+      "geo": {
+        "lat": 42.6941048,
+        "lon": -71.0145511
+      },
+      "card_eligibility": "town_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01921"
+      ],
+      "hours": {
+        "monday": "09:00-19:00",
+        "tuesday": "09:00-19:00",
+        "wednesday": "09:00-19:00",
+        "thursday": "09:00-19:00",
+        "friday": "10:00-15:00",
+        "saturday": "10:00-15:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Any Boxford Resident is eligible to obtain a Boxford Town Library Account and Card.",
+          "block": "Any Boxford Resident is eligible to obtain a Boxford Town Library Account and Card. To obtain an account please follow the steps outlined below:\nCome to the Library located at 7A Spofford Road, Boxford. MA\nBring a form of Identification (See Below) and Proof of Residency (See below)\nFill out the Library Account and Card application\nCurrently, accounts are created in person. If you are unable to come in for a visit please call the library at 978-887-7323 to see how we can help you get set up with a library account and card.",
+          "source": "https://www.boxfordma.gov/210/Get-a-Library-Card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.boxfordma.gov/210/Get-a-Library-Card",
+          "evidence": "Mon-Thu 9-7; Fri-Sat 10-3"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Anyone with a valid MVLC Library card may reserve a pass",
+          "source": "https://www.boxfordma.gov/394/Museum-Passes",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "isabella-stewart-gardner-museum",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "tewksbury",
+      "name": "Tewksbury Public Library",
+      "town": "Tewksbury",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.tewksburypl.org/about-us/pages/get-library-card",
+      "pass_page": "https://tewksburypl.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.tewksburypl.org/",
+      "address": {
+        "street": "300 Chandler Street",
+        "city": "Tewksbury",
+        "state": "MA",
+        "zip": "01876"
+      },
+      "geo": {
+        "lat": 42.6067193,
+        "lon": -71.2252445
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01876"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "10:00-21:00",
+        "thursday": "10:00-17:00",
+        "friday": "10:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": null,
+          "evidence": null,
+          "source": "https://www.tewksburypl.org/home/pages/museum-passes",
+          "confidence": "unverified"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "chelmsford",
+      "name": "Chelmsford Public Library",
+      "town": "Chelmsford",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.chelmsfordlibrary.org/about/get-a-library-card",
+      "pass_page": "https://chelmsfordlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.chelmsfordlibrary.org/",
+      "address": {
+        "street": "25 Boston Road",
+        "city": "Chelmsford",
+        "state": "MA",
+        "zip": "01824"
+      },
+      "geo": {
+        "lat": 42.5940049,
+        "lon": -71.3521057
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01824",
+        "01863"
+      ],
+      "hours_note": "See the library site for daily hours (homepage shows today only).",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "If you live in Chelmsford, your employer is the Town of Chelmsford, or you own a business or property in Chelmsford, you may apply in person at the Chelmsford Public Library.",
+          "block": "Online Application\nIf you live anywhere in Massachusetts (including Chelmsford) and do not already have a card from an MVLC Library, you may apply for a library card online .\nIn-Person Application for a Chelmsford Library Card\nIf you live in Chelmsford, your employer is the Town of Chelmsford, or you own a business or property in Chelmsford, you may apply in person at the Chelmsford Public Library. Bring proof of identity and current address/employment. Items that may serve this purpose include (but are not limited to) a government-issued photo id, utility bill, tax bill, current use of a Town of Chelmsford work email address, or school photo ID.",
+          "source": "https://www.chelmsfordlibrary.org/about/get-a-library-card",
+          "source_confidence": "high"
+        },
+        "hours_note": {
+          "source": "https://www.chelmsfordlibrary.org/",
+          "evidence": "Main: 9:30-8:30 / Open Now"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town_first",
+          "evidence": "Chelmsford residents, and active members of the Chelmsford Friends of the Library may reserve passes up to 60 days in advance. [DUAL-TIER: anyone can check out a pass on the day of use, without a reservation.]",
+          "source": "https://www.chelmsfordlibrary.org/books-more/museum-passes",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "haverhill",
+      "name": "Haverhill Public Library",
+      "town": "Haverhill",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.haverhillpl.org/library-card",
+      "pass_page": "https://haverhillpl.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.haverhillpl.org/",
+      "address": {
+        "street": "99 Main Street",
+        "city": "Haverhill",
+        "state": "MA",
+        "zip": "01830"
+      },
+      "geo": {
+        "lat": 42.7772317,
+        "lon": -71.0767573
+      },
+      "card_eligibility": "town_or_works",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01830",
+        "01832",
+        "01835"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "You must be a Haverhill resident, Haverhill property owner, or municipal employee to receive a Haverhill Public Library card.",
+          "block": "How to get a Haverhill Public Library Card!\nYou must be a Haverhill resident, Haverhill property owner, or municipal employee to receive a Haverhill Public Library card.\nYou can come in to the library and set up your library card in a few minutes! If you are coming into the library to create a card, you will need to bring proof of address with you. Examples of proof of address include a state ID or a utility bill.",
+          "source": "https://www.haverhillpl.org/library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.haverhillpl.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "You will need your library card number to make your reservation. (no town restriction stated)",
+          "source": "https://haverhillpl.org/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "americas-stonehenge",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/22",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "lawrence",
+      "name": "Lawrence Public Library",
+      "town": "Lawrence",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.lawrencepl.org/library-card",
+      "pass_page": "https://www.lawrencepl.org/cultural-passes",
+      "website": "https://www.lawrencepl.org/",
+      "address": {
+        "street": "51 Lawrence Street",
+        "city": "Lawrence",
+        "state": "MA",
+        "zip": "01841"
+      },
+      "geo": {
+        "lat": 42.7107211,
+        "lon": -71.1622146
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01840",
+        "01841",
+        "01843"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "hours_note": "Summer: Mon/Thu/Fri/Sat 9–5 only (closed Tue/Wed/Sun).",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "The library registers Lawrence residents above 7th grade with a picture identification (driver's license, Massachusetts identification, Passport, or school ID) and proof of address (utility bill, current month rent receipt, or currently postmarked mail).",
+          "block": "The library registers Lawrence residents above 7th grade with a picture identification (driver's license, Massachusetts identification, Passport, or school ID) and proof of address (utility bill, current month rent receipt, or currently postmarked mail). Borrowers 6th grade or below must have a parent or guardian's signature to obtain a library card.\nMassachusetts residents with a card from their hometown belonging to the Merrimack Valley Library Consortium (MVLC) network are welcome to use our library. If you are a member of another network (NOBLE, Minuteman, Metro Boston, Clams, Old Colony, or CW/MARS) we can register your card in our network.\nNon-Lawrence residents may obtain a Local Use Lawrence Public Library Card, which would give the borrower access to all of the services offered by the Lawrence Public Library, including our extensive Online Databases.",
+          "source": "https://www.lawrencepl.org/library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.lawrencepl.org/contact",
+          "evidence": "Mon-Thu 9-9; Fri 9-5; Sat 9-5; Summer Mon/Thu/Fri/Sat 9-5"
+        },
+        "hours_note": {
+          "source": "https://www.lawrencepl.org/contact",
+          "evidence": "Mon-Thu 9-9; Fri 9-5; Sat 9-5; Summer Mon/Thu/Fri/Sat 9-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town_first",
+          "evidence": "Passes may be borrowed by anyone 16 and older holding a Lawrence library card. If passes have not been reserved by Lawrence patrons, same day reservations from patrons from other consortium member libraries will be honored after 10AM. [DUAL-TIER]",
+          "source": "https://www.lawrencepl.org/culture-pass-policy",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "museum-of-science",
+          "verdict": "own_card_only",
+          "prober_card": "wilmington",
+          "probed_date": "2026-05-10",
+          "evidence": "Same-network rejection: lawrence is MVLC; an MVLC card (wilmington) was rejected at lawrence's museum-of-science booking (backup/cross_network_tests.json, 2026-05-10). Same-network sibling card refused at card-validation => requires lawrence's own card (card-ownership), not town residency.",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "methuen",
+      "name": "Nevins Memorial Library",
+      "town": "Methuen",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.nevinslibrary.org/about-nevins-library/library-cards/",
+      "pass_page": "https://nevinslibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.nevinslibrary.org/",
+      "address": {
+        "street": "305 Broadway",
+        "city": "Methuen",
+        "state": "MA",
+        "zip": "01844"
+      },
+      "geo": {
+        "lat": 42.7303934,
+        "lon": -71.1890986
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01844"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Methuen Residents Bring a current photo ID and proof of your Methuen address to the Main Desk.",
+          "block": "How to Get a Physical Card\nMethuen Residents\nBring a current photo ID and proof of your Methuen address to the Main Desk.\nChildren 12 and younger can get their free library card in the Children’s Room with a parent or legal guardian present.\nUse your Nevins Library card at any Massachusetts library or use it with our many Online Resources .\nMethuen Teachers, Town Employees, or Methuen Property Taxpayers\nBring your ID and information about your employment or address to the Main Desk.\nReceive a free library card to be used at the Nevins Library.\nNonresidents of Methuen\nApply for a library card in your hometown library.\nUse your Massachusetts library card at the Nevins Library too.",
+          "source": "https://www.nevinslibrary.org/about-nevins-library/library-cards/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.nevinslibrary.org/about-nevins-library/directions-hours/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Anyone with a MVLC library card are also able to reserve these passes in advance!",
+          "source": "https://www.nevinslibrary.org/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "americas-stonehenge",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "andover",
+      "name": "Memorial Hall Library",
+      "town": "Andover",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://mhl.org/borrow/on-the-shelves/library-cards-and-borrowing-items",
+      "pass_page": "https://mhl.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://mhl.org/",
+      "address": {
+        "street": "2 North Main Street",
+        "city": "Andover",
+        "state": "MA",
+        "zip": "01810"
+      },
+      "geo": {
+        "lat": 42.656828,
+        "lon": -71.1414112
+      },
+      "card_eligibility": "town_or_works",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01810"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "All Andover residents, property owners, Town of Andover municipal employees, and Andover public school teachers and students are eligible to get a Memorial Hall Library card.",
+          "block": "All Andover residents, property owners, Town of Andover municipal employees, and Andover public school teachers and students are eligible to get a Memorial Hall Library card. Apply for a virtual card online if you are an Andover resident or visit the library with appropriate identification to sign up.\nResidents of other cities and towns in Massachusetts may use their hometown library card in our system or apply for a Merrimack Valley Library Consortium (MVLC) card online or in person with appropriate identification.\nStudents, Staff and Teachers affiliated with a school in Andover but do not live in Andover may apply for a card online .",
+          "source": "https://mhl.org/borrow/on-the-shelves/library-cards-and-borrowing-items",
+          "source_confidence": "high"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Only Andover residents may reserve and use this pass.",
+          "source": "https://mhl.assabetinteractive.com/museum-passes/by-museum/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "the-aviation-museum-of-new-hampshire",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "data_quality_flags": [
+        {
+          "code": "probe_open_vs_town_policy",
+          "severity": "warn",
+          "message": "Card cross-test accepted a non-resident network card, but the stated policy is town-residents-only — verify."
+        }
+      ]
+    },
+    {
+      "id": "north-andover",
+      "name": "Stevens Memorial Library",
+      "town": "North Andover",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://www.stevensmemlib.org/library-card",
+      "pass_page": "https://stevensmemlib.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.stevensmemlib.org/",
+      "address": {
+        "street": "345 Main Street",
+        "city": "North Andover",
+        "state": "MA",
+        "zip": "01845"
+      },
+      "geo": {
+        "lat": 42.6962001,
+        "lon": -71.1263051
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01845"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "10:00-21:00",
+        "thursday": "10:00-21:00",
+        "friday": "10:00-18:00",
+        "saturday": "closed",
+        "sunday": "closed"
+      },
+      "hours_note": "Weekends open during the school year (see site); closed Memorial Day–Labor Day.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Residents of North Andover : New borrowers are asked to show photo identification and proof of their North Andover address before they are issued a Stevens library card.",
+          "block": "Residents of North Andover : New borrowers are asked to show photo identification and proof of their North Andover address before they are issued a Stevens library card. A parent or legal guardian must sign the registration form and co-sign the library card of any child under 12.\nResidents of towns whose libraries belong to the Merrimack Valley Library Consortium : Patrons who live in another MVLC community can receive a MVLC card OR can use the ecard registration to get a home library card.\nMassachusetts residents outside of the Merrimack Valley Library Consortium (MVLC) may either cross-register their other Massachusetts network card or be issued an MVLC card. A patron must have a photo ID (i.e. license, etc.) proving MA residence and complete a registration form.",
+          "source": "https://www.stevensmemlib.org/library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.stevensmemlib.org/circulation-department/hours-and-directions/",
+          "evidence": "Mon-Thu 10-9; Fri 10-6; Sat-Sun seasonal"
+        },
+        "hours_note": {
+          "source": "https://www.stevensmemlib.org/circulation-department/hours-and-directions/",
+          "evidence": "Mon-Thu 10-9; Fri 10-6; Sat-Sun seasonal"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town_first",
+          "evidence": "Only North Andover residents may reserve a Stevens pass in advance using the online system, by phone, or in person. [DUAL-TIER: non-residents may borrow same-day with a valid MVLC card]",
+          "source": "https://www.stevensmemlib.org/circulation-department/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident wilmington card (same MVLC network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "middleton",
+      "name": "Flint Public Library",
+      "town": "Middleton",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://flintlibrary.org/index.php/get-a-library-card/",
+      "pass_page": "https://flintlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://flintlibrary.org/",
+      "address": {
+        "street": "1 South Main St.",
+        "city": "Middleton",
+        "state": "MA",
+        "zip": "01949"
+      },
+      "geo": {
+        "lat": 42.594723,
+        "lon": -71.0161341
+      },
+      "card_eligibility": "town_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01949"
+      ],
+      "hours": {
+        "monday": "10:00-20:00",
+        "tuesday": "10:00-20:00",
+        "wednesday": "10:00-20:00",
+        "thursday": "10:00-20:00",
+        "friday": "10:00-17:00",
+        "saturday": "closed",
+        "sunday": "13:00-17:00"
+      },
+      "hours_note": "Summer schedule differs (July–Aug).",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Flint Public Library cards may only be issued to residents of Middleton, Massachusetts.",
+          "block": "LIBRARY CARDS\nLibrary cards will be issued to any resident of Middleton, MA who shows proper identification. The minimum age to receive a library card is 5 years. Children 14 years and under need a parent or guardian’s signature.\nPLEASE NOTE: Flint Public Library cards may only be issued to residents of Middleton, Massachusetts. If you are a Massachusetts resident that lives outside of Middleton and you would like to borrow our materials, please visit the library circulation desk or call 978-774-8132 to learn more.",
+          "source": "https://flintlibrary.org/index.php/get-a-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://flintlibrary.org/",
+          "evidence": "Mon-Thu 10-8; Fri 10-5; Sun 1-5 (summer differs)"
+        },
+        "hours_note": {
+          "source": "https://flintlibrary.org/",
+          "evidence": "Mon-Thu 10-8; Fri 10-5; Sun 1-5 (summer differs)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "You will not be able to ... reserve museum passes ... with this eCard. For that you will need a tangible card issued by the Flint Public Library or your home library. (Home-library MVLC card accepted -> not Middleton-only -> MA floor.)",
+          "source": "https://flintlibrary.org/index.php/library-card-info/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "christian-science-plaza",
+          "verdict": "network_open",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident wilmington card (same MVLC network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "arlington",
+      "name": "Robbins Library",
+      "town": "Arlington",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.robbinslibrary.org/about/library-card/",
+      "pass_page": "https://robbinslibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.robbinslibrary.org/",
+      "address": {
+        "street": "700 Massachusetts Avenue",
+        "city": "Arlington",
+        "state": "MA",
+        "zip": "02476"
+      },
+      "geo": {
+        "lat": 42.41623,
+        "lon": -71.157052
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02474",
+        "02476"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "13:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "14:00-17:00"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": null,
+          "evidence": null,
+          "source": "https://www.robbinslibrary.org/services/museum-passes/",
+          "confidence": "unverified"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://www.robbinslibrary.org/about/library-card/",
+          "evidence": "Robbins is Minuteman; MLN policy: 'All who live, work, or study in Massachusetts are eligible'."
+        }
+      }
+    },
+    {
+      "id": "newton",
+      "name": "Newton Free Library",
+      "town": "Newton",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://newtonfreelibrary.net/about/our-library/library-card-borrowing/",
+      "pass_page": "https://newtonfreelibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://newtonfreelibrary.net/",
+      "address": {
+        "street": "330 Homer Street",
+        "city": "Newton",
+        "state": "MA",
+        "zip": "02459"
+      },
+      "geo": {
+        "lat": 42.3359129,
+        "lon": -71.2078175
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02458",
+        "02459",
+        "02460",
+        "02461",
+        "02462",
+        "02464",
+        "02465",
+        "02466",
+        "02467",
+        "02468"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Anyone with a current address in Massachusetts is eligible to get a Newton Free Library card.",
+          "block": "Apply for a library card in person at the Newton Free Library or at any other Minuteman library with a photo ID and proof of address .\nProof of address can be a drivers license, a lease agreement, or something that was mailed to you (Amazon, a bill, etc) .\nMA Residents (who do not live in Newton)\nAnyone with a current address in Massachusetts is eligible to get a Newton Free Library card.\nWhile anyone in Massachusetts can get a Newton library card, some resources are only available for Newton Residents including, but not limited to: hoopla, kanopy, and naxos. For specific information about access to another database or digital resource if you are not a Newton Resident, please contact the library for more information.",
+          "source": "https://newtonfreelibrary.net/about/our-library/library-card-borrowing/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://newtonfreelibrary.net/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "...allow all Minuteman Library Card Holders to visit museums, parks, and more at discounted rates.",
+          "source": "https://newtonfreelibrary.net/collections/more-than-books/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "lincoln",
+      "name": "Lincoln Public Library",
+      "town": "Lincoln",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://lincolnpl.org/cards/",
+      "pass_page": "https://lincolnpl.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://lincolnpl.org/",
+      "address": {
+        "street": "3 Bedford Road",
+        "city": "Lincoln",
+        "state": "MA",
+        "zip": "01773"
+      },
+      "geo": {
+        "lat": 42.4260627,
+        "lon": -71.3030615
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01773"
+      ],
+      "evidence_sources": {
+        "card": "https://lincolnpl.org/cards/"
+      },
+      "hours": {
+        "monday": "13:00-20:30",
+        "tuesday": "09:00-18:00",
+        "wednesday": "09:00-20:30",
+        "thursday": "09:00-20:30",
+        "friday": "09:00-18:00",
+        "saturday": "10:00-17:00",
+        "sunday": "closed"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Passes may be booked by anyone with a Minuteman Library Network card in good standing.",
+          "source": "https://lincolnpl.org/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://lincolnpl.org/cards/",
+          "evidence": "'Massachusetts residency is required to get your library card.'"
+        },
+        "card_page": {
+          "source": "https://lincolnpl.org/cards/",
+          "evidence": "Present a photo ID and proof of your current address at the Circulation Desk. Massachusetts residency is required to get your library card."
+        }
+      }
+    },
+    {
+      "id": "acton",
+      "name": "Acton Memorial Library",
+      "town": "Acton",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.actonmemoriallibrary.org/services/library-cards/",
+      "pass_page": "https://actonmemoriallibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.actonmemoriallibrary.org/",
+      "address": {
+        "street": "486 Main Street",
+        "city": "Acton",
+        "state": "MA",
+        "zip": "01720"
+      },
+      "geo": {
+        "lat": 42.4866602,
+        "lon": -71.43342
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01720"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "14:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Library cards are available to anyone 4 years and older who lives in Massachusetts or works in Acton.",
+          "block": "Library cards are available to anyone 4 years and older who lives in Massachusetts or works in Acton. Anyone who would like a full service library card must apply in person at the Circulation Desk. Valid name and address identification are required. AML accepts a current, valid Massachusetts Driver’s license or Massachusetts State ID card with current address.",
+          "source": "https://www.actonmemoriallibrary.org/services/library-cards/",
+          "source_confidence": "high"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Acton's passes may be reserved by anyone 14 years or older with a valid Minuteman Library Network card.",
+          "source": "https://www.actonmemoriallibrary.org/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "framingham",
+      "name": "Framingham Public Library",
+      "town": "Framingham",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://framinghamlibrary.org/services/cards-borrowing",
+      "pass_page": "https://framinghamlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://framinghamlibrary.org/",
+      "address": {
+        "street": "49 Lexington Street",
+        "city": "Framingham",
+        "state": "MA",
+        "zip": "01702"
+      },
+      "geo": {
+        "lat": 42.2819343,
+        "lon": -71.4167413
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01701",
+        "01702"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "hours_note": "Sunday 1–5 Sept–June; closed July–Aug.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Massachusetts residents may obtain a library card in person by presenting identification and proof of current address.",
+          "block": "Massachusetts residents may obtain a library card in person by presenting identification and proof of current address. There is no waiting period for a library card. You must be at least five years old to get a card.\nYou may sign up for a temporary card online , which allows you to download eBooks and access state provided databases. Please read the Minuteman page on temporary cards for more information.",
+          "source": "https://framinghamlibrary.org/services/cards-borrowing",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://framinghamlibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5 Sept-June"
+        },
+        "hours_note": {
+          "source": "https://framinghamlibrary.org/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5 Sept-June"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Patrons must present the valid Minuteman library card used to reserve the museum pass when picking up a returnable pass.",
+          "source": "https://framinghamlibrary.org/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "maynard",
+      "name": "Maynard Public Library",
+      "town": "Maynard",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.maynardpubliclibrary.org/get-library-card",
+      "pass_page": "https://maynardpubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.maynardpubliclibrary.org/",
+      "address": {
+        "street": "77 Nason Street",
+        "city": "Maynard",
+        "state": "MA",
+        "zip": "01754"
+      },
+      "geo": {
+        "lat": 42.4342628,
+        "lon": -71.4520731
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01754"
+      ],
+      "hours": {
+        "monday": "10:00-17:00",
+        "tuesday": "14:00-21:00",
+        "wednesday": "10:00-17:00",
+        "thursday": "14:00-21:00",
+        "friday": "10:00-17:00",
+        "saturday": "10:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Any resident of Massachusetts, age 4 or older, who can provide an ID proving current address is entitled to a library card.",
+          "block": "Library cards are free! They are quick and easy to get, with no waiting period.\nAny resident of Massachusetts, age 4 or older, who can provide an ID proving current address is entitled to a library card.\nChildren (4-13 years old) need a parent or guardian’s signature and ID to obtain a card.",
+          "source": "https://www.maynardpubliclibrary.org/get-library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.maynardpubliclibrary.org/",
+          "evidence": "Mon 10-5; Tue 2-9; Wed 10-5; Thu 2-9; Fri-Sat 10-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Maynard Public Library passes are available to anyone who holds a library card for the Minuteman Library Network (MLN).",
+          "source": "https://www.maynardpubliclibrary.org/museum-passes",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "carlisle",
+      "name": "Gleason Public Library",
+      "town": "Carlisle",
+      "network": "MVLC",
+      "platform": "assabet",
+      "consortium_label": "MVLC",
+      "card_issuance_group": "MVLC",
+      "card_issuance_groups": [
+        "MVLC"
+      ],
+      "card_auth_groups": [
+        "MVLC"
+      ],
+      "card_page": "https://gleasonlibrary.org/get-a-library-card",
+      "pass_page": "https://gleasonlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://gleasonlibrary.org/",
+      "address": {
+        "street": "22 Bedford Road",
+        "city": "Carlisle",
+        "state": "MA",
+        "zip": "01741"
+      },
+      "geo": {
+        "lat": 42.528797,
+        "lon": -71.3481427
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01741"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "13:00-21:00",
+        "thursday": "10:00-21:00",
+        "friday": "10:00-17:00",
+        "saturday": "10:00-17:00",
+        "sunday": "closed"
+      },
+      "hours_note": "Saturday shortens to 10–1 in summer (July–Aug).",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Any Carlisle resident aged 5 and older is eligible to obtain a Gleason library card free of charge.",
+          "block": "Any Carlisle resident aged 5 and older is eligible to obtain a Gleason library card free of charge. Children under age 14 must be accompanied by a parent or guardian able to show identification and proof of residency. See our Checkout Policy for more details.\nLibrary cards are available at the main circulation desk during all library hours, or via online registration at https://ln.mvlc.org/carlisleecard . Photo ID and proof of address are required for in-person registration. Online registration uses an address verification service; if the online registration service is unable to verify residence, a temporary card will be issued and you will need to show photo ID and proof of address at the library to receive a permanent card.\nResidents of other MVLC towns may use their hometown cards at the Gleason. Residents of other Massachusetts towns may register their home library card with us – photo ID and proof of address are required – or may register online for an eCard .",
+          "source": "https://gleasonlibrary.org/get-a-library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://gleasonlibrary.org/about/the-library/hours/",
+          "evidence": "Mon/Tue/Thu 10-9; Wed 1-9; Fri 10-5; Sat seasonal"
+        },
+        "hours_note": {
+          "source": "https://gleasonlibrary.org/about/the-library/hours/",
+          "evidence": "Mon/Tue/Thu 10-9; Wed 1-9; Fri 10-5; Sat seasonal"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Museum passes available at Gleason Public Library for residents and those employed in Carlisle.",
+          "source": "http://www.carlisle.org/library_passes.htm",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "wilmington",
+          "probed_date": "2026-may/28",
+          "evidence": "non-resident wilmington card (same MVLC network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "wayland",
+      "name": "Wayland Free Public Library",
+      "town": "Wayland",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://waylandlibrary.org/services/library-card/",
+      "pass_page": "https://waylandlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://waylandlibrary.org/",
+      "address": {
+        "street": "5 Concord Rd",
+        "city": "Wayland",
+        "state": "MA",
+        "zip": "01778"
+      },
+      "geo": {
+        "lat": 42.3651526,
+        "lon": -71.3608951
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01778"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "10:00-17:00",
+        "sunday": "14:00-17:00"
+      },
+      "hours_note": "Summer (from late June): Saturday shortens, Sunday closed.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Come in person to the library with a photo ID and proof of your current Massachusetts address.",
+          "block": "How do I obtain a library card?\nCome in person to the library with a photo ID and proof of your current Massachusetts address.\nAccepted forms of photo ID include, but are not limited to: state driver’s license or ID, passport, military ID, and student ID\nAccepted forms of current address include, but are not limited to: state driver’s license or ID, passport, bill, and government sent mail",
+          "source": "https://waylandlibrary.org/services/library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://waylandlibrary.org/blog/branch/wayland-public-library/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 10-5; Sun 2-5"
+        },
+        "hours_note": {
+          "source": "https://waylandlibrary.org/blog/branch/wayland-public-library/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 10-5; Sun 2-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "As a Massachusetts resident and a member of the Minuteman Library Network, your card provides access to materials ... [and you can] reserve museum passes. (no Wayland-resident restriction on passes)",
+          "source": "https://waylandlibrary.org/services/library-card/",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "weston",
+      "name": "Weston Public Library",
+      "town": "Weston",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.westonma.gov/CivicSend/ViewMessage/message/165250",
+      "pass_page": "https://westonlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.westonma.gov/",
+      "address": {
+        "street": "87 School Street",
+        "city": "Weston",
+        "state": "MA",
+        "zip": "02493"
+      },
+      "geo": {
+        "lat": 42.3621029,
+        "lon": -71.294617
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02493"
+      ],
+      "hours": {
+        "monday": "09:00-18:00",
+        "tuesday": "09:00-18:00",
+        "wednesday": "09:00-20:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "10:00-16:00",
+        "sunday": "12:00-16:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "If you have a Massachusetts address, you make the cut.",
+          "block": "If you have a Massachusetts address, you make the cut. If you don't have a library card, just visit our Circulation Desk. Library card signup takes 5 minutes or less and all you need is something verifying your name and address, like a driver's license or school ID. If you don't have something like that, don't stress, just give us a call and we can figure out what you do have that will work. If you can't wait another minute to check out our digital resources, you can get a digital library card online and get instant access to our Overdrive/Libby eBook, magazine, and digital audiobook collection. This eCard is only good for 6 months, so plan to drop by the library to convert your eCard to a fancy-schmancy physical card that never expires.",
+          "source": "https://www.westonma.gov/CivicSend/ViewMessage/message/165250",
+          "source_confidence": "high"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Reserve a museum pass online. You may also reserve museum passes at the library on the day you wish to use them, on a first-come, first-served basis. (No Weston-resident restriction on passes -> MA floor.)",
+          "source": "https://www.westonlibrary.org/1543/Services",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/25",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "sudbury",
+      "name": "Goodnow Library",
+      "town": "Sudbury",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://goodnowlibrary.org/services/in-library/get-a-library-card/",
+      "pass_page": "https://goodnowlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://goodnowlibrary.org/",
+      "address": {
+        "street": "21 Concord Road",
+        "city": "Sudbury",
+        "state": "MA",
+        "zip": "01776"
+      },
+      "geo": {
+        "lat": 42.3632821,
+        "lon": -71.4169226
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01776"
+      ],
+      "evidence_sources": {
+        "card": "https://goodnowlibrary.org/services/in-library/get-a-library-card/"
+      },
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "10:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "hours_note": "Saturday/Sunday hours vary seasonally.",
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Museum passes can be checked out to adult library accounts in good standing ... (no Sudbury-residency restriction)",
+          "source": "https://goodnowlibrary.org/services/in-library/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://goodnowlibrary.org/services/in-library/get-a-library-card/",
+          "evidence": "'We welcome any Massachusetts resident over the age of 5 to apply for a library card.'"
+        },
+        "card_page": {
+          "source": "https://goodnowlibrary.org/services/in-library/get-a-library-card/",
+          "evidence": "We welcome any Massachusetts resident over the age of 5 to apply for a library card."
+        },
+        "hours": {
+          "source": "https://goodnowlibrary.org/branch/hours/",
+          "evidence": "Mon-Thu 9-9; Fri 9-5; Sat 10-5; Sun 1-5 seasonal"
+        },
+        "hours_note": {
+          "source": "https://goodnowlibrary.org/branch/hours/",
+          "evidence": "Mon-Thu 9-9; Fri 9-5; Sat 10-5; Sun 1-5 seasonal"
+        }
+      }
+    },
+    {
+      "id": "belmont",
+      "name": "Belmont Public Library",
+      "town": "Belmont",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.belmontpubliclibrary.net/",
+      "pass_page": "https://belmontpubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.belmontpubliclibrary.net/",
+      "address": {
+        "street": "336 Concord Avenue",
+        "city": "Belmont",
+        "state": "MA",
+        "zip": "02478"
+      },
+      "geo": {
+        "lat": 42.3946196,
+        "lon": -71.1722221
+      },
+      "card_eligibility": "town_or_works",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02478"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Museum pass borrowers must be Belmont residents.",
+          "source": "https://belmontpubliclibrary.net/visit/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "armenian-museum-of-america",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://belmontpubliclibrary.net/borrow/library-cards/",
+          "evidence": "'Free library cards are available to Belmont residents, those who own property within but live outside Belmont, attend Belmont schools, or who work in Belmont. All others may purchase or renew a card for $40 annually.'"
+        }
+      }
+    },
+    {
+      "id": "lexington",
+      "name": "Cary Memorial Library",
+      "town": "Lexington",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.carylibrary.org/library-cards",
+      "pass_page": "https://carylibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.carylibrary.org/",
+      "address": {
+        "street": "1874 Massachusetts Avenue",
+        "city": "Lexington",
+        "state": "MA",
+        "zip": "02420"
+      },
+      "geo": {
+        "lat": 42.4481135,
+        "lon": -71.2296888
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02420",
+        "02421"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "To get a library card, please bring a piece of identification with your name and current address to one of our circulation desks and complete our library card application.",
+          "block": "Get a Library Card In Person\nFor Adults and Young Adults (ages 13 and up)\nTo get a library card, please bring a piece of identification with your name and current address to one of our circulation desks and complete our library card application. For your convenience, our library card application [PDF] is also available to download, complete and print in advance of your visit. For more information about identification requirements, see the Minuteman Library Network’s Library Card Registration Policy . Your card will be issued immediately and may be used the same day at any Minuteman library.\nPlease remember to bring your library card with you each time you visit. There is no charge for your initial library card, nor is there a charge for replacement cards.\nChildren\nWe recommend waiting until your child's 5th birthday to get them their own library card, but every family is different! Children ages 12 and younger may apply for a library card if they are accompanied by a parent or guardian with a piece of identification with their name and current address. Please read Your Child's Library Card [PDF] document for more information.",
+          "source": "https://www.carylibrary.org/library-cards",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.carylibrary.org/hours",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Patrons living or working in Lexington with a valid library card can reserve one pass per day.",
+          "source": "https://www.carylibrary.org/museum-passes",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "blithewold",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "wellesley",
+      "name": "Wellesley Free Library",
+      "town": "Wellesley",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.wellesleyfreelibrary.org/library-info/policies/eligibility-and-use-of-library-cards-policy/",
+      "pass_page": "https://wellesleyfreelibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.wellesleyfreelibrary.org/",
+      "address": {
+        "street": "530 Washington Street",
+        "city": "Wellesley",
+        "state": "MA",
+        "zip": "02482"
+      },
+      "geo": {
+        "lat": 42.2968319,
+        "lon": -71.2906479
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02481",
+        "02482"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Upon request, the WFL will issue a library card to any resident of Massachusetts.",
+          "block": "The Trustees of the Wellesley Free Library (WFL) encourage the use of a Wellesley Free Library card as an opportunity to access the collections and resources of its library and of the larger network of libraries within the Minuteman Network.\nUpon request, the WFL will issue a library card to any resident of Massachusetts.\nResidents sixteen (16) years or older must present a photo ID and satisfactory proof of Massachusetts residency. Out-of-state students at institutions of higher learning in Massachusetts, as well as out-of-state individuals who work or own property in Massachusetts, may also obtain cards with production of a photo ID and satisfactory proof of their above-required relationship to Massachusetts.",
+          "source": "https://www.wellesleyfreelibrary.org/library-info/policies/eligibility-and-use-of-library-cards-policy/",
+          "source_confidence": "high"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town_first",
+          "evidence": "Wellesley residents and town employees may reserve one pass per week, up to 60 days in advance ... Non-Wellesley residents with a valid Minuteman card may borrow a museum pass on the day of its use. [DUAL-TIER]",
+          "source": "https://www.wellesleyfreelibrary.org/beyond-wfl/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "waltham",
+      "name": "Waltham Public Library",
+      "town": "Waltham",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://waltham.lib.ma.us/policies/library-cards/",
+      "pass_page": "https://waltham.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://waltham.lib.ma.us/",
+      "address": {
+        "street": "735 Main Street",
+        "city": "Waltham",
+        "state": "MA",
+        "zip": "02451"
+      },
+      "geo": {
+        "lat": 42.3766045,
+        "lon": -71.2394861
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02451",
+        "02452",
+        "02453"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Waltham Public Library cards are free.",
+          "block": "Your Free Waltham Public Library Card: Waltham Public Library cards are free. A library card gives borrowing and computer use privileges at the Library and provides access to the Library’s online subscriptions from any Internet connection.\nGETTING A CARD:\nA library card will be issued to you when one of the following is presented in person:\nValid Massachusetts driver’s license, or\nValid Massachusetts state identification card\nOR, any one identification from EACH of the following two lists:\nCurrent Picture Identification (ID) – must include name and photo:\nPassport\nAlien Registration Card\nGovernment issued cards, such as Military ID\nUniversity or school ID\nOut-of-state driver’s license\nState issued photo ID including welfare, Medicaid or FID card\nAddress Verification – must include applicant’s name and Massachusetts address*\nImprinted bank check or deposit slip\nUtility bill dated within the last 30 days\nPostmarked first class letter dated within the last 30 days\nSchool schedule with your name and address printed on it\nLetter verifying residency and mailing address dated within the last 30 days from a social service provider, temporary employer that provides housing, or a short-term residence.\nPostcard mailed to you from the Library\nLease Agreement\n*a Post Office Box or business address is not sufficient – we must also have your current residential address.",
+          "source": "https://waltham.lib.ma.us/policies/library-cards/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://waltham.lib.ma.us/hours-directions/",
+          "evidence": "Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Museum passes are available to Waltham residents or a Friend of the Waltham Public Library (FWPL) member from any city/town.",
+          "source": "https://waltham.lib.ma.us/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/28",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "watertown",
+      "name": "Watertown Free Public Library",
+      "town": "Watertown",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.watertownlib.org/217/Library-Cards-Borrowing",
+      "pass_page": "https://watertownlib.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.watertownlib.org/",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Watertown",
+        "state": "MA",
+        "zip": "02472"
+      },
+      "geo": {
+        "lat": 42.3675505,
+        "lon": -71.1867442
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02472"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-19:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Museum passes may be booked by anyone with a Minuteman Library Network card in good standing.",
+          "source": "https://www.watertownlib.org/770/Museum-Passes",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "armenian-museum-of-america",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/29",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "concord",
+      "name": "Concord Free Public Library",
+      "town": "Concord",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://concordlibrary.org/borrow/library-cards-and-borrowing",
+      "pass_page": "https://concordlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://concordlibrary.org/",
+      "address": {
+        "street": "129 Main Street",
+        "city": "Concord",
+        "state": "MA",
+        "zip": "01742"
+      },
+      "geo": {
+        "lat": 42.4588186,
+        "lon": -71.3534425
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01742"
+      ],
+      "hours": {
+        "monday": "10:00-20:00",
+        "tuesday": "09:00-20:00",
+        "wednesday": "09:00-20:00",
+        "thursday": "09:00-20:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "To open a library account, please visit the Circulation Desk and provide a valid ID with your current Massachusetts address .",
+          "block": "To open a library account, please visit the Circulation Desk and provide a valid ID with your current Massachusetts address . In lieu of an-up to-date ID, you may also bring one photo ID AND a piece of mail (personal letter, bank letter, tax/utility bill, or lease agreement) with your updated address . If you already have a Minuteman Library Network card from a nearby library , it likely already works here! Children ages 11 and younger may get a card if their parent/guardian allows and is present at signup. Middle and high school students may use their student ID as proof of identity.\nOut-of-state residents who meet at least one of the following requirements may be issued a temporary library card with sufficient identification: work in Massachusetts, attend school in Massachusetts, own property in Massachusetts, or are temporarily living in Massachusetts for more than two months.",
+          "source": "https://concordlibrary.org/borrow/library-cards-and-borrowing",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://concordlibrary.org/visit/hours-and-directions",
+          "evidence": "Mon 10-8; Tue-Thu 9-8; Fri-Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Passes may be booked up to 4 weeks in advance ... (no Concord-only restriction; Minuteman cardholder floor)",
+          "source": "https://concordlibrary.org/borrow/museum-passes",
+          "confidence": "medium"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/27",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "bedford",
+      "name": "Bedford Free Public Library",
+      "town": "Bedford",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://bedfordlibrary.net/library-card",
+      "pass_page": "https://bedfordlibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://bedfordlibrary.net/",
+      "address": {
+        "street": "7 Mudge Way",
+        "city": "Bedford",
+        "state": "MA",
+        "zip": "01730"
+      },
+      "geo": {
+        "lat": 42.4923139,
+        "lon": -71.2841881
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01730"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Library cards are issued free of charge to any Massachusetts resident, student, or employee who can provide identification and proof of current home address.",
+          "block": "Library cards are issued free of charge to any Massachusetts resident, student, or employee who can provide identification and proof of current home address.\nA child must be present for a parent/legal guardian to get them a library card. Children of any age can have a card, but a parent or guardian must sign the application for any child under the age of thirteen.\nYour card can be used at all other public libraries in the Minuteman Library Network.",
+          "source": "https://bedfordlibrary.net/library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://bedfordlibrary.net/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 9-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Use your library card to obtain discount passes to many museums and attractions. You will need your valid library card, an email, and a phone number to complete the reservation. (No Bedford-resident restriction stated; any valid library card -> MA floor.)",
+          "source": "https://bedfordlibrary.net/services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "needham",
+      "name": "Needham Free Public Library",
+      "town": "Needham",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://needhamlibrary.org/get-a-library-card",
+      "pass_page": "https://needhamma.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://needhamlibrary.org/",
+      "address": {
+        "street": "1139 Highland Avenue",
+        "city": "Needham",
+        "state": "MA",
+        "zip": "02494"
+      },
+      "geo": {
+        "lat": 42.2882044,
+        "lon": -71.2350162
+      },
+      "card_eligibility": "town_or_works",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02492",
+        "02494"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:30",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-18:00"
+      },
+      "hours_note": "Sunday 1–6; shortens to 1–5 in summer.",
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Individuals who live, work or study in Massachusetts are eligible to hold a Minuteman Library Network card, which avails patrons of over six million items held by forty-two member libraries.",
+          "block": "Individuals who live, work or study in Massachusetts are eligible to hold a Minuteman Library Network card, which avails patrons of over six million items held by forty-two member libraries. A valid Minuteman library card allows borrowing privileges at all member libraries, though select resources and databases may be only available based on residency or college affiliation.",
+          "source": "https://needhamlibrary.org/get-a-library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://needhamlibrary.org/about/about-us/hours-directions/",
+          "evidence": "Mon-Thu 9-9; Fri 9-5:30; Sat 9-5; Sun 1-6 (summer 1-5)"
+        },
+        "hours_note": {
+          "source": "https://needhamlibrary.org/about/about-us/hours-directions/",
+          "evidence": "Mon-Thu 9-9; Fri 9-5:30; Sat 9-5; Sun 1-6 (summer 1-5)"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Museum passes are available to anyone living or working in Needham with a valid card from the Minuteman Library Network.",
+          "source": "https://needhamlibrary.org/services/general-services/museum-passes/",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "own_card_only",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/25",
+          "evidence": "non-resident somerville card (same Minuteman network) blocked at card-validation",
+          "source": "booking_probe"
+        }
+      }
+    },
+    {
+      "id": "natick",
+      "name": "Morse Institute Library",
+      "town": "Natick",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://morseinstitute.libguides.com/get-started",
+      "pass_page": "https://morseinstitute.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://www.morseinstitute.org/",
+      "address": {
+        "street": "14 East Central Street",
+        "city": "Natick",
+        "state": "MA",
+        "zip": "01760"
+      },
+      "geo": {
+        "lat": 42.2846114,
+        "lon": -71.345821
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "01760"
+      ],
+      "evidence_sources": {
+        "card": "https://morseinstitute.libguides.com/get-started"
+      },
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Natick museum passes are available to all valid Minuteman Library Network cardholders, and can be reserved at either library.",
+          "source": "https://morseinstitute.libguides.com/building/museum-passes",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "american-heritage-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-may/23",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at card-validation (advanced to reserver-info; not booked)",
+          "source": "booking_probe"
+        }
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://morseinstitute.libguides.com/get-started",
+          "evidence": "Morse Institute is Minuteman; MLN policy: 'All who live, work, or study in Massachusetts'."
+        },
+        "card_page": {
+          "source": "https://morseinstitute.libguides.com/get-started",
+          "evidence": "To get a library card, visit any Minuteman library with ID and proof of current address."
+        },
+        "hours": {
+          "source": "https://morseinstitute.libguides.com/",
+          "evidence": "Mon-Thu 9-9; Fri 9-6; Sat 9-5"
+        }
+      }
+    },
+    {
+      "id": "somerville",
+      "name": "Somerville Public Library",
+      "town": "Somerville",
+      "network": "Minuteman",
+      "platform": "assabet",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://somervillepubliclibrary.org/how-do-i/get-library-card/",
+      "pass_page": "https://somervillepubliclibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://somervillepubliclibrary.org/",
+      "address": {
+        "street": "79 Highland Ave.",
+        "city": "Somerville",
+        "state": "MA",
+        "zip": "02143"
+      },
+      "geo": {
+        "lat": 42.3857881,
+        "lon": -71.0944054
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02143",
+        "02144",
+        "02145"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "It's available to any Massachusetts resident 5 years and older.",
+          "block": "About Your Library Card\nIt's free!\nIt's available to any Massachusetts resident 5 years and older. (See below for details!)\nIt's needed for all transactions, in person, online, or by phone.",
+          "source": "https://somervillepubliclibrary.org/how-do-i/get-library-card/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://somervillepubliclibrary.org/",
+          "evidence": "Central: Mon-Thu 9-9; Fri 9-6; Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Cultural Passes ... are available to all adults with a valid Minuteman library card. (No town restriction; a Minuteman card requires a MA connection -> any MA resident.)",
+          "source": "https://somervillepubliclibrary.org/how-do-i/get-cultural-pass/",
+          "confidence": null
+        },
+        "probe": null
+      }
+    },
+    {
+      "id": "quincy",
+      "name": "Thomas Crane Public Library",
+      "town": "Quincy",
+      "network": "OCLN",
+      "platform": "assabet",
+      "consortium_label": "OCLN",
+      "card_issuance_group": "OCLN",
+      "card_issuance_groups": [
+        "OCLN"
+      ],
+      "card_auth_groups": [
+        "OCLN"
+      ],
+      "card_page": "https://thomascranelibrary.org/library-cards-accounts/",
+      "pass_page": "https://thomascranelibrary.assabetinteractive.com/museum-passes/by-museum/",
+      "website": "https://thomascranelibrary.org/",
+      "address": {
+        "street": "40 Washington Street",
+        "city": "Quincy",
+        "state": "MA",
+        "zip": "02169"
+      },
+      "geo": {
+        "lat": 42.2515107,
+        "lon": -71.0008246
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02169",
+        "02170",
+        "02171"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Library cards are available for free! Massachusetts residents can apply for an e-card online.",
+          "block": "Get a Thomas Crane Public Library card! Sign up at any TCPL location or online.\nLibrary cards are available for free! Massachusetts residents can apply for an e-card online. With an e-card, you can access and use our online resources and databases, borrow eBooks and eAudiobooks, and stream music, movies, and TV online.\nA permanent card is required for the borrowing of physical materials. To register for a permanent card, to upgrade your e-card to a permanent card, or to get a replacement card, visit any TCPL location and bring proof of identification.",
+          "source": "https://thomascranelibrary.org/library-cards-accounts/",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://tcplquincy.org/visit/locations/",
+          "evidence": "Main: Mon-Thu 9-9; Fri-Sat 9-5; Sun 1-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Museum passes are reservable by Quincy residents who are over the age of 18 and have a library card in good standing (owe less than $15.00.)",
+          "source": "https://tcplquincy.org/borrow/museum-passes/",
+          "confidence": null
+        },
+        "probe": null
+      }
+    },
+    {
+      "id": "cambridge",
+      "name": "Cambridge Public Library",
+      "town": "Cambridge",
+      "network": "Minuteman",
+      "platform": "libcal",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://www.cambridgema.gov/iwantto/getalibrarycard",
+      "pass_page": "https://cambridgepl.libcal.com/passes",
+      "website": "https://www.cambridgema.gov/",
+      "address": {
+        "street": "795 Massachusetts Ave.",
+        "city": "Cambridge",
+        "state": "MA",
+        "zip": "02139"
+      },
+      "geo": {
+        "lat": 42.3671148,
+        "lon": -71.1056283
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02138",
+        "02139",
+        "02140",
+        "02141",
+        "02142"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Live, work, go to school or own property in Massachusetts (for at least 2 months);",
+          "block": "Requirements\nTo get a Cambridge Public Library card, you must:\nLive, work, go to school or own property in Massachusetts (for at least 2 months);\nBe at least 5 years old; and\nRegister in person at any Cambridge Public Library location.\nIf you don’t meet these requirements, you can still apply for a digital card through the Minuteman Library Network . This gives you instant access to digital books and audiobooks and some databases.",
+          "source": "https://www.cambridgema.gov/iwantto/getalibrarycard",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://www.cambridgema.gov/cpl",
+          "evidence": "Main: Sun 1-5; Mon-Thu 9-9; Fri-Sat 9-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "Free or discounted museum passes are available to the public through the Cambridge Public Library to anyone with a Minuteman Library card. (No town restriction; a Minuteman card requires a MA connection -> any MA resident.)",
+          "source": "https://www.cambridgema.gov/Departments/cambridgepubliclibrary/iwantto/getamuseumpass",
+          "confidence": null
+        },
+        "probe": null
+      }
+    },
+    {
+      "id": "brookline",
+      "name": "Brookline Public Library",
+      "town": "Brookline",
+      "network": "Minuteman",
+      "platform": "libcal",
+      "consortium_label": "Minuteman",
+      "card_issuance_group": "Minuteman",
+      "card_issuance_groups": [
+        "Minuteman"
+      ],
+      "card_auth_groups": [
+        "Minuteman"
+      ],
+      "card_page": "https://brooklinelibrary.org/library-card",
+      "pass_page": "https://brooklinelibrary.libcal.com/passes",
+      "website": "https://brooklinelibrary.org/",
+      "address": {
+        "street": "361 Washington Street",
+        "city": "Brookline",
+        "state": "MA",
+        "zip": "02445"
+      },
+      "geo": {
+        "lat": 42.3346378,
+        "lon": -71.1213843
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02445",
+        "02446",
+        "02447"
+      ],
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "10:00-21:00",
+        "thursday": "10:00-21:00",
+        "friday": "10:00-17:00",
+        "saturday": "10:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "evidence": "Minuteman Library cards are available at no cost to: Massachusetts residents, Town of Brookline employees, Brookline public or private school students, Owners of property in Brookline",
+          "block": "Who can get a card?\nMinuteman Library cards are available at no cost to:\nMassachusetts residents\nTown of Brookline employees\nBrookline public or private school students\nOwners of property in Brookline\nOut-of-state residents should refer to our guidelines for out-of-state cardholders .",
+          "source": "https://brooklinelibrary.org/library-card",
+          "source_confidence": "high"
+        },
+        "hours": {
+          "source": "https://brooklinelibrary.org/locations/",
+          "evidence": "Village Main: Sun 1-5; Mon-Thu 10-9; Fri-Sat 10-5"
+        }
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "At the Public Library of Brookline, we offer the following museum passes to Brookline residents to save on museum visits and trips.",
+          "source": "https://brooklinelibrary.libcal.com/passes",
+          "confidence": "high"
+        },
+        "probe": {
+          "attraction_slug": "boston-childrens-museum",
+          "verdict": "network_open",
+          "prober_card": "somerville",
+          "probed_date": "2026-jun/04",
+          "evidence": "non-resident somerville card (same Minuteman network) accepted at LibCal login/card-validation and advanced to the Booking Details review step (not finalized) — despite the pass page stating passes are 'to Brookline residents'. Conflicts with the stated town-only policy.",
+          "source": "booking_probe"
+        }
+      },
+      "data_quality_flags": [
+        {
+          "code": "probe_open_vs_town_policy",
+          "severity": "warn",
+          "message": "Card cross-test accepted a non-resident network card, but the stated policy is town-residents-only — verify."
+        }
+      ]
+    },
+    {
+      "id": "braintree",
+      "name": "Thayer Public Library",
+      "town": "Braintree",
+      "network": "OCLN",
+      "platform": "libcal",
+      "consortium_label": "OCLN",
+      "card_issuance_group": "OCLN",
+      "card_issuance_groups": [
+        "OCLN"
+      ],
+      "card_auth_groups": [
+        "OCLN"
+      ],
+      "card_page": "https://www.thayerpubliclibrary.org/get-a-library-card/",
+      "pass_page": "https://thayerpubliclibrary.libcal.com/passes",
+      "website": "https://www.thayerpubliclibrary.org/",
+      "address": {
+        "street": "798 Washington Street",
+        "city": "Braintree",
+        "state": "MA",
+        "zip": "02184"
+      },
+      "geo": {
+        "lat": 42.2056618,
+        "lon": -71.0042666
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02184",
+        "02185"
+      ],
+      "evidence_sources": {
+        "card": "https://www.thayerpubliclibrary.org/get-a-library-card/"
+      },
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "09:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "A valid Old Colony Library Network (OCLN) library card is required to reserve all passes and to borrow passes that need to be checked out at the library.",
+          "source": "https://www.thayerpubliclibrary.org/thayer/museum-passes",
+          "confidence": "high"
+        },
+        "probe": null
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://www.thayerpubliclibrary.org/get-a-library-card/",
+          "evidence": "'If you are a resident of Massachusetts you may register for a card at any library.'"
+        },
+        "card_page": {
+          "source": "https://www.thayerpubliclibrary.org/get-a-library-card/",
+          "evidence": "Page about obtaining a library card or e-card from Thayer Public Library."
+        }
+      }
+    },
+    {
+      "id": "milton",
+      "name": "Milton Public Library",
+      "town": "Milton",
+      "network": "OCLN",
+      "platform": "libcal",
+      "consortium_label": "OCLN",
+      "card_issuance_group": "OCLN",
+      "card_issuance_groups": [
+        "OCLN"
+      ],
+      "card_auth_groups": [
+        "OCLN"
+      ],
+      "card_page": "https://www.miltonlibrary.org/",
+      "pass_page": "https://miltonlibrary.libcal.com/passes",
+      "website": "https://www.miltonlibrary.org/",
+      "address": {
+        "street": "476 Canton Ave",
+        "city": "Milton",
+        "state": "MA",
+        "zip": "02186"
+      },
+      "geo": {
+        "lat": 42.2538412,
+        "lon": -71.0773573
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02186"
+      ],
+      "hours": {
+        "monday": "09:00-21:00",
+        "tuesday": "09:00-21:00",
+        "wednesday": "09:00-21:00",
+        "thursday": "13:00-21:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "ma",
+          "evidence": "The Friends of the Milton Public Library has funded yearly museum memberships so that library card holders, like yourself, can visit local museums and zoos at a discount. (cardholders; no Milton-resident restriction)",
+          "source": "https://www.miltonlibrary.org/assets/Museum-Pass-101.pdf",
+          "confidence": "medium"
+        },
+        "probe": null
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://miltonlibrary.org/about/faq/",
+          "evidence": "'If you are a resident of Massachusetts you may register online for an E-Card... upgraded to a permanent card.'"
+        },
+        "hours": {
+          "source": "https://www.miltonlibrary.org/",
+          "evidence": "Mon-Wed 9-9; Thu 1-9; Fri-Sat 9-5"
+        }
+      }
+    },
+    {
+      "id": "cohasset",
+      "name": "Paul Pratt Memorial Library",
+      "town": "Cohasset",
+      "network": "OCLN",
+      "platform": "museumkey",
+      "consortium_label": "OCLN",
+      "card_issuance_group": "OCLN",
+      "card_issuance_groups": [
+        "OCLN"
+      ],
+      "card_auth_groups": [
+        "OCLN"
+      ],
+      "card_page": "https://www.cohassetlibrary.org/189/Get-a-Library-Card",
+      "pass_page": "https://www2.museumkey.com/ui/byMuseum/?code=paulma02025&branchID=231",
+      "website": "https://www.cohassetlibrary.org/",
+      "address": {
+        "street": "35 Ripley Road",
+        "city": "Cohasset",
+        "state": "MA",
+        "zip": "02025"
+      },
+      "geo": {
+        "lat": 42.242198,
+        "lon": -70.8090953
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02025"
+      ],
+      "evidence_sources": {
+        "card": "https://www.cohassetlibrary.org/189/Get-a-Library-Card"
+      },
+      "hours": {
+        "monday": "09:30-19:30",
+        "tuesday": "09:30-19:30",
+        "wednesday": "09:30-19:30",
+        "thursday": "09:30-17:00",
+        "friday": "09:30-17:00",
+        "saturday": "09:30-17:00",
+        "sunday": "14:00-17:00"
+      },
+      "hours_note": "School-year hours (Labor Day–Memorial Day); summer differs. Sunday 2–5 Sept–May.",
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town",
+          "evidence": "Museum passes are available for Cohasset library card holders.",
+          "source": "https://www.cohassetlibrary.org/537/Circulation-Policy",
+          "confidence": "high"
+        },
+        "probe": null
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://www.cohassetlibrary.org/189/Get-a-Library-Card",
+          "evidence": "'Library cards are available free of charge to all adults and children' with ID + mailing address."
+        },
+        "card_page": {
+          "source": "https://www.cohassetlibrary.org/189/Get-a-Library-Card",
+          "evidence": "Library cards are available free of charge to all adults and children. Stop by the library and present your driver's license or another form of identification that includes your mailing address."
+        },
+        "hours": {
+          "source": "https://www.cohassetlibrary.org/",
+          "evidence": "Mon-Wed 9:30-7:30; Thu-Sat 9:30-5; Sun 2-5 Sept-May"
+        },
+        "hours_note": {
+          "source": "https://www.cohassetlibrary.org/",
+          "evidence": "Mon-Wed 9:30-7:30; Thu-Sat 9:30-5; Sun 2-5 Sept-May"
+        }
+      }
+    },
+    {
+      "id": "hingham",
+      "name": "Hingham Public Library",
+      "town": "Hingham",
+      "network": "OCLN",
+      "platform": "museumkey",
+      "consortium_label": "OCLN",
+      "card_issuance_group": "OCLN",
+      "card_issuance_groups": [
+        "OCLN"
+      ],
+      "card_auth_groups": [
+        "OCLN"
+      ],
+      "card_page": "https://www.hinghamlibrary.org/148/Get-a-Library-Card",
+      "pass_page": "https://www2.museumkey.com/ui/byMuseum/?code=hingma02043&branchID=505",
+      "website": "https://hinghamlibrary.org/",
+      "address": {
+        "street": "66 Leavitt Street",
+        "city": "Hingham",
+        "state": "MA",
+        "zip": "02043"
+      },
+      "geo": {
+        "lat": 42.23504,
+        "lon": -70.8744034
+      },
+      "card_eligibility": "ma_resident",
+      "pass_pickup_default": "unknown",
+      "resident_zips": [
+        "02043"
+      ],
+      "evidence_sources": {
+        "card": "https://www.hinghamlibrary.org/148/Get-a-Library-Card"
+      },
+      "hours": {
+        "monday": "10:00-21:00",
+        "tuesday": "10:00-21:00",
+        "wednesday": "10:00-21:00",
+        "thursday": "10:00-21:00",
+        "friday": "closed",
+        "saturday": "09:00-17:00",
+        "sunday": "13:00-17:00"
+      },
+      "pass_borrowing": {
+        "policy": {
+          "scope": "town_first",
+          "evidence": "Hingham residents with active library cards may reserve passes up to 60 days in advance. Residents from other towns may request passes the day of, or the day before you'd like to use the pass. [DUAL-TIER]",
+          "source": "https://www.eventkeeper.com/mars/tkflex.cfm?curOrg=HINGHAM",
+          "confidence": "high"
+        },
+        "probe": null
+      },
+      "_evidence": {
+        "card_eligibility": {
+          "source": "https://hinghamlibrary.org/148/Library-Cards",
+          "evidence": "Free to OCLN-town residents; non-OCLN MA patrons may also obtain a Hingham card if no card from their local library."
+        },
+        "card_page": {
+          "source": "https://www.hinghamlibrary.org/148/Get-a-Library-Card",
+          "evidence": "Library cards are issued free of charge to residents of towns participating in the Old Colony Library Network (OCLN)."
+        },
+        "hours": {
+          "source": "https://hinghamlibrary.org/",
+          "evidence": "Mon-Thu 10-9; Fri Closed; Sat 9-5; Sun 1-5"
+        }
+      }
+    }
+  ]
+}

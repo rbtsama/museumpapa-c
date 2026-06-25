@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design language (keep new UI on these scales) ──────────────────────────
+   TYPE (all even px):
+     10  micro — tags, tiny labels
+     12  small — meta, captions, helper, secondary text          (ink-soft / ink-faint)
+     14  body  — default text, list rows, buttons                (ink / ink-soft)
+     16  large — inputs, prices, emphasis                        (ink)
+     18  subhead — section / sheet titles
+     20  heading — app wordmark in header
+     28  display — auth wordmark
+   COLOR roles:
+     ink (#1a2f25) primary · ink-soft secondary · ink-faint tertiary
+     brand (#1b5740) green = links/CTAs/emphasis · #c2691a orange = soft notices
+   RADIUS:
+     6 (rounded-md) checkbox · 10 controls (button/input) · 12 cards & rows ·
+     16 hero card · 20 bottom sheets · full chips/avatars
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --color-bg: #fff5ec;
+  --color-bg2: #ffe7d4;
+  --color-ink: #1a2f25;
+  --color-brand: #1b5740;
+  --color-brand-2: #1b5740;
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* clean warm-cream base; pages add the soft top glow via .page-bg. */
+  background-color: #fdf2e7;
+  color: var(--color-ink);
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Page background: one soft warm glow domed in from the top — like gentle
+   morning light — settling into the cream base. A single, calm radial (not the
+   busy multi-hotspot wash) reads more refined and never cuts off on long pages. */
+.page-bg {
+  background-color: #fdf2e7;
+  background-image: radial-gradient(
+    132% 64% at 50% -10%,
+    #fff9f1 0%,
+    #ffeede 30%,
+    #ffe1c7 56%,
+    rgba(255, 225, 199, 0) 82%
+  );
+  background-repeat: no-repeat;
+}
+
+/* List background: an off-white base (never pure white — too hard/bright) with
+   two soft, faint warm glows for a calm, glassy, slightly-luminous feel behind
+   the cards. */
+.list-bg {
+  background-color: #fbf7f1;
+  background-image:
+    radial-gradient(115% 70% at 12% -8%, rgba(255, 236, 214, 0.55), rgba(255, 236, 214, 0) 58%),
+    radial-gradient(110% 65% at 92% 16%, rgba(255, 223, 206, 0.42), rgba(255, 223, 206, 0) 52%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* frosted glass — used by the pinned header. Degrades to a near-opaque warm
+   surface where backdrop-filter is unsupported. */
+.glass {
+  background: rgba(255, 248, 240, 0.72);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  backdrop-filter: saturate(1.4) blur(14px);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass { background: rgba(255, 246, 237, 0.96); }
+}
+
+/* Film grain — a fixed, fine SVG-noise layer over everything for a premium,
+   photographic texture. pointer-events:none so it never blocks taps; soft-light
+   so it reads as grain (light/dark speckle) rather than a flat gray haze.
+   Tune the strength with `opacity`. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* keep it static (no shimmer) — grain is decorative only */
+}
+
+.font-display {
+  font-family: Fraunces, Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+/* hide scrollbars on the horizontal date strip */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* kill the browser autofill sky-blue/yellow fill on inputs (keep our own bg) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: var(--color-ink);
+  caret-color: var(--color-ink);
+  transition: background-color 9999s ease-in-out 0s;
+}
+input { font-family: inherit; }

@@ -1,0 +1,19 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+.DS_Store
+Thumbs.db
+
+# 临时/调试文件(项目约定: _tmp_ 前缀)
+_tmp_*
+
+# 运行素材(public/data · public/img · public/fonts/*.woff2)必须入库:
+# Vercel 以本目录为 Root 部署,这些资产不在仓库里线上就没有数据/头图全裂。
+# 数据来自 coupon-map(认定的准),由 README 的 sync 命令重建;入库后随 git 持久。
+# (本地重抓只覆盖/新增,不会清空已入库副本。)
+
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
