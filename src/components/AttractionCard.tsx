@@ -33,7 +33,7 @@ export function AttractionCard({
         {img && <img src={img} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />}
         {unavailable && (
           <span className="absolute left-0 top-0 rounded-br-[8px] bg-[#8a8078] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
-            Full
+            No passes
           </span>
         )}
         <button

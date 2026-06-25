@@ -59,11 +59,14 @@ export function SupplyRow({ s, date, onBook }: { s: Supply; date: string; onBook
       <div className="mt-2.5 space-y-2 border-t border-[#f1e9dd] pt-2.5">
         <div className="flex items-start gap-3">
           <span className="w-16 shrink-0 text-[12px] text-ink-faint">Discount</span>
-          <div className="flex-1 space-y-0.5 text-[14px] text-ink-soft">
+          <div className="flex-1 space-y-1.5 text-[14px] text-ink-soft">
             {lines.map((ln, i) => (
-              <div key={i} className="flex justify-between gap-3">
-                <span>{ln.audience}</span>
-                <span className="font-semibold text-ink">{ln.amount}</span>
+              <div key={i}>
+                <div className="flex justify-between gap-3">
+                  <span>{ln.audience}</span>
+                  <span className="font-semibold text-ink">{ln.amount}</span>
+                </div>
+                {ln.note && <div className="mt-0.5 text-[12px] leading-snug text-ink-faint">“{ln.note}”</div>}
               </div>
             ))}
           </div>
@@ -108,7 +111,7 @@ const capWord = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCas
 
 function amountFromForm(form?: string, value?: number | null): string | null {
   const f = (form || "").toLowerCase();
-  if (f === "free") return "free";
+  if (f === "free") return "Free";
   if (f.includes("percent")) return `${value}% off`;
   if (f.includes("off") || f.includes("amount")) return `$${value} off`;
   if (value != null) return `$${value}`;
@@ -126,19 +129,29 @@ function ageLabel(age?: { min: number | null; max: number | null } | null): stri
   return null;
 }
 
-function policyLines(s: Supply): { audience: string; amount: string }[] {
+interface PolicyLine {
+  audience: string;
+  amount: string;
+  note?: string; // verbatim library wording, shown small under the line
+}
+
+function policyLines(s: Supply): PolicyLine[] {
   const ap = s.pass.coupon.audience_policies ?? [];
   const lines = ap
-    .map((p) => {
+    .map((p): PolicyLine | null => {
+      const amount = amountFromForm(p.form, p.value);
+      if (!amount) return null;
       const age = ageLabel(p.age_range);
+      const note = p.source_phrase?.trim() || undefined;
       return {
         audience: capWord(p.audience || "Everyone") + (age ? ` (${age})` : ""),
-        amount: amountFromForm(p.form, p.value),
+        amount,
+        note,
       };
     })
-    .filter((x): x is { audience: string; amount: string } => !!x.amount);
+    .filter((x): x is PolicyLine => !!x);
   if (lines.length) return lines;
-  const amt = s.deal.kind === "free" ? "free" : s.deal.kind === "discount" ? "discount" : s.deal.now ?? s.deal.badge;
+  const amt = s.deal.kind === "free" ? "Free" : s.deal.kind === "discount" ? "Discount" : s.deal.now ?? s.deal.badge;
   return [{ audience: "Everyone", amount: amt }];
 }
 

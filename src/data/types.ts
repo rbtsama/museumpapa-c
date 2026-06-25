@@ -61,6 +61,7 @@ export interface Pass {
       count?: number | null;
       form?: string;
       value?: number | null;
+      source_phrase?: string | null; // verbatim wording from the library page
     }>;
     summary: string;
   };
