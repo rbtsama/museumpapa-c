@@ -4,6 +4,7 @@ import type { DataBundle } from "../data/types";
 import type { Supply } from "../lib/supply";
 import { bookingUrl } from "../lib/booking";
 import { useScrollLock } from "../lib/useScrollLock";
+import { useOverlay } from "../lib/useOverlay";
 
 // Booking: pick which of your cards to use. Then the action depends on whether
 // that card has a saved number — copy it and book, or just open the library
@@ -30,6 +31,7 @@ export function BookSheet({
   const [sel, setSel] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   useScrollLock(open);
+  useOverlay(open, onClose); // Back / edge-swipe closes the sheet, not the page
 
   // default-select when there's only one eligible card; reset on reopen
   useEffect(() => {

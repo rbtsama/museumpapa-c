@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { shareApp } from "../lib/share";
 import { useScrollLock } from "../lib/useScrollLock";
+import { useOverlay } from "../lib/useOverlay";
 
 // Shown the moment a user taps Book (the library site opens in a new tab, this
 // pops here at the same time). When they switch back it's already waiting — a
@@ -15,6 +16,7 @@ export function ShareInviteModal({
   onClose: () => void;
 }) {
   useScrollLock(open);
+  useOverlay(open, onClose);
   return (
     <AnimatePresence>
       {open && (
@@ -47,10 +49,7 @@ export function ShareInviteModal({
             </p>
 
             <button
-              onClick={() => {
-                shareApp(attractionName);
-                onClose();
-              }}
+              onClick={() => { void shareApp(attractionName).finally(onClose); }}
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-[12px] bg-brand py-3 text-[15px] font-bold text-white active:scale-[.99]"
             >
               <ShareGlyph />

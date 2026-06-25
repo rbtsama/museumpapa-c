@@ -12,6 +12,7 @@ import { BookSheet } from "../components/BookSheet";
 import { CardPicker } from "../components/CardPicker";
 import { ShareInviteModal } from "../components/ShareInviteModal";
 import { shareApp } from "../lib/share";
+import { useOverlay } from "../lib/useOverlay";
 
 const AUD_ORDER = ["adult", "senior", "youth", "student", "child", "military", "educator", "family", "infant"];
 
@@ -37,6 +38,7 @@ export default function AttractionDetail({
   const [cal, setCal] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [invite, setInvite] = useState(false); // post-Book "tell a friend" popup
+  useOverlay(editCards, () => setEditCards(false)); // Back closes the card sheet
   useEffect(() => {
     window.scrollTo(0, 0); // a detail page always opens at the top
     loadData().then(setData);

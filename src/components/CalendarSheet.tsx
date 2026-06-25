@@ -2,6 +2,8 @@ import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import type { AvailStatus } from "../lib/supply";
 import { MonthCalendar } from "./MonthCalendar";
+import { useScrollLock } from "../lib/useScrollLock";
+import { useOverlay } from "../lib/useOverlay";
 
 // iPhone-style date picker: slides up from the bottom. Rendered through a portal
 // on document.body so it escapes the glass header's containing block (a
@@ -26,11 +28,13 @@ export function CalendarSheet({
   onSelect: (d: Date) => void;
   onClose: () => void;
 }) {
+  useScrollLock(open); // freeze the page behind the sheet (no scroll-through)
+  useOverlay(open, onClose); // Back / edge-swipe closes the sheet, not the page
   return createPortal(
     <AnimatePresence>
       {open && (
         <motion.div className="fixed inset-0 z-[90] flex items-end justify-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-          <div className="absolute inset-0 bg-[rgba(20,40,30,.4)]" onClick={onClose} />
+          <div className="absolute inset-0 bg-[rgba(16,32,24,.55)]" onClick={onClose} />
           <motion.div
             className="relative w-full max-w-[440px] rounded-t-[20px] bg-white px-5 pt-2"
             style={{ paddingBottom: "max(20px, env(safe-area-inset-bottom))" }}

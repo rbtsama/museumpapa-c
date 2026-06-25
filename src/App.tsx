@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import AttractionDetail from "./pages/AttractionDetail";
 import { LeaveGuardModal } from "./components/LeaveGuardModal";
+import { popOverlay } from "./lib/useOverlay";
 import { todayISO } from "./lib/dates";
 
 // Lightweight app: Home list, an attraction Detail page, and the Account
@@ -22,17 +23,16 @@ export default function App() {
   const bypassRef = useRef(false); // a confirmed Leave is in flight
   const seeded = useRef(false);
 
-  // Keep the browser back gesture inside the app, with one guard entry always on
-  // top. Backing out of a sub-page (detail / profile) returns to Home; backing
-  // out of Home shows a "leave?" prompt (also nudging a bookmark) instead of
-  // dropping the user straight off the site.
+  // The browser Back gesture is kept inside the app by one guard history entry
+  // that we re-arm after every pop. A Back press peels exactly one layer, in
+  // order: an open sheet/modal → a sub-page (→ Home) → on Home, a friendly
+  // bookmark nudge — never dropping straight off the site by accident.
   function openSub(v: Exclude<View, "home">, prep: () => void) {
     prep();
     setView(v);
-    window.history.pushState({ mp: v }, "");
   }
   function back() {
-    window.history.back(); // → popstate → Home (we're on a sub-page)
+    window.history.back(); // run the same flow as a hardware / edge Back
   }
   function confirmLeave() {
     bypassRef.current = true;
@@ -42,20 +42,21 @@ export default function App() {
   useEffect(() => {
     if (!seeded.current) {
       seeded.current = true;
-      window.history.pushState({ mp: "guard" }, ""); // seed the guard entry
+      window.history.pushState({ guard: true }, ""); // seed the guard entry
     }
     const onPop = () => {
       if (bypassRef.current) {
         bypassRef.current = false;
         return; // a confirmed Leave — let it through
       }
+      window.history.pushState({ guard: true }, ""); // re-arm for the next Back
+      if (popOverlay()) return; // 1. close the topmost open sheet/modal
       if (viewRef.current !== "home") {
-        setView("home"); // sub entry consumed; guard is back on top
+        setView("home"); // 2. a sub-page → Home
         setProfileTab("menu");
-      } else {
-        window.history.pushState({ mp: "guard" }, ""); // re-arm
-        setLeaveOpen(true);
+        return;
       }
+      setLeaveOpen(true); // 3. on Home → nudge a bookmark before leaving
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);

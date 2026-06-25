@@ -31,16 +31,16 @@ export function LeaveGuardModal({
             transition={{ type: "spring", stiffness: 300, damping: 26 }}
           >
             <div className="mx-auto mb-3 grid h-14 w-14 place-items-center rounded-full bg-brand/10 text-[28px]">🔖</div>
-            <h4 className="font-display text-[19px] font-bold text-ink">Leave MuseumPapa?</h4>
+            <h4 className="font-display text-[19px] font-bold text-ink">Bookmarked us yet?</h4>
             <p className="mx-auto mt-1.5 max-w-[290px] text-[13px] leading-relaxed text-ink-soft">
-              Before you go, bookmark us (or add to your Home Screen) so your library-card passes are one tap away next time.
+              Save MuseumPapa so you don’t lose your way back. 😉
             </p>
 
             <button
               onClick={onStay}
               className="mt-4 w-full rounded-[12px] bg-brand py-3 text-[15px] font-bold text-white active:scale-[.99]"
             >
-              Stay
+              Got it
             </button>
             <button
               onClick={onLeave}
