@@ -13,7 +13,7 @@ const FORM: Record<string, { label: string; fg: string }> = {
 
 // A static, always-expanded pass card for the detail page: tag + price header,
 // the discount breakdown, then the main Book button. No fold / chevron.
-export function SupplyRow({ s, date, onBook }: { s: Supply; date: string; onBook: (s: Supply) => void }) {
+export function SupplyRow({ s, date, onBook }: { s: Supply; date: string; onBook: (s: Supply, date: string) => void }) {
   const [cal, setCal] = useState(false);
   const [pickDay, setPickDay] = useState(date);
   useEffect(() => setPickDay(date), [date]); // follow the page's target day
@@ -78,7 +78,7 @@ export function SupplyRow({ s, date, onBook }: { s: Supply; date: string; onBook
 
       {/* main button (full → opens this pass's own date picker) */}
       <button
-        onClick={() => (ok ? onBook(s) : setCal(true))}
+        onClick={() => (ok ? onBook(s, pickDay) : setCal(true))}
         className={"mt-3 w-full rounded-[10px] py-2.5 text-[14px] font-bold text-white " + (ok ? "bg-brand" : "bg-[#c2691a]")}
       >
         {ok ? `Book this pass, pick at ${prettyISO(pickDay)}` : "Pick another day"}

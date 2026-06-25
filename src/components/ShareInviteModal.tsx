@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { shareApp } from "../lib/share";
+import { useScrollLock } from "../lib/useScrollLock";
 
 // Shown the moment a user taps Book (the library site opens in a new tab, this
 // pops here at the same time). When they switch back it's already waiting — a
@@ -13,6 +14,7 @@ export function ShareInviteModal({
   attractionName?: string;
   onClose: () => void;
 }) {
+  useScrollLock(open);
   return (
     <AnimatePresence>
       {open && (
@@ -22,7 +24,7 @@ export function ShareInviteModal({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          <div className="absolute inset-0 bg-[rgba(10,30,22,.45)]" onClick={onClose} />
+          <div className="absolute inset-0 bg-[rgba(8,22,16,.72)]" onClick={onClose} />
           <motion.div
             className="relative w-full max-w-[360px] rounded-[20px] bg-white p-5 pt-6 text-center shadow-card"
             initial={{ scale: 0.9, opacity: 0 }}
@@ -38,10 +40,10 @@ export function ShareInviteModal({
               ✕
             </button>
 
-            <div className="mx-auto mb-3 grid h-14 w-14 place-items-center rounded-full bg-brand/10 text-[30px]">🎉</div>
-            <h4 className="font-display text-[19px] font-bold text-ink">Your pass is on its way!</h4>
+            <div className="mx-auto mb-3 grid h-14 w-14 place-items-center rounded-full bg-brand/10 text-[30px]">💛</div>
+            <h4 className="font-display text-[19px] font-bold text-ink">Enjoyed booking with us?</h4>
             <p className="mx-auto mt-1.5 max-w-[290px] text-[13px] leading-relaxed text-ink-soft">
-              Enjoy your visit. Love MuseumPapa? Share it with a friend who'd love free &amp; half-price museums too.
+              If MuseumPapa made that easier, pass it on — send a friend the app so they can unlock free &amp; half-price museums with their library card too.
             </p>
 
             <button
@@ -52,7 +54,7 @@ export function ShareInviteModal({
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-[12px] bg-brand py-3 text-[15px] font-bold text-white active:scale-[.99]"
             >
               <ShareGlyph />
-              Share to your friends
+              Share MuseumPapa
             </button>
           </motion.div>
         </motion.div>

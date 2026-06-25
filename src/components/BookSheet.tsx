@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { DataBundle } from "../data/types";
 import type { Supply } from "../lib/supply";
+import { bookingUrl } from "../lib/booking";
+import { useScrollLock } from "../lib/useScrollLock";
 
 // Booking: pick which of your cards to use. Then the action depends on whether
 // that card has a saved number — copy it and book, or just open the library
 // site to book.
 export function BookSheet({
   supply,
+  date,
   data,
   barcodes,
   onClose,
@@ -15,6 +18,7 @@ export function BookSheet({
   onBooked,
 }: {
   supply: Supply | null;
+  date?: string; // the day picked in the row — used to deep-link the booking page
   data: DataBundle;
   barcodes: Record<string, string>;
   onClose: () => void;
@@ -25,6 +29,7 @@ export function BookSheet({
   const cards = supply?.eligibleLibIds ?? [];
   const [sel, setSel] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  useScrollLock(open);
 
   // default-select when there's only one eligible card; reset on reopen
   useEffect(() => {
@@ -36,12 +41,13 @@ export function BookSheet({
 
   function book() {
     if (!sel || !supply) return;
+    const url = bookingUrl(supply.pass, date); // chosen day's page when supported
     if (barcode) {
       navigator.clipboard?.writeText(barcode).catch(() => {});
       setCopied(true);
-      window.setTimeout(() => { window.open(supply.pass.source_url, "_blank"); onBooked(); onClose(); }, 450);
+      window.setTimeout(() => { window.open(url, "_blank"); onBooked(); onClose(); }, 450);
     } else {
-      window.open(supply.pass.source_url, "_blank");
+      window.open(url, "_blank");
       onBooked();
       onClose();
     }

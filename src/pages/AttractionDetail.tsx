@@ -28,7 +28,7 @@ export default function AttractionDetail({
 }) {
   const [data, setData] = useState<DataBundle | null>(null);
   const [wallet, setWallet] = useWallet();
-  const [booking, setBooking] = useState<Supply | null>(null);
+  const [booking, setBooking] = useState<{ s: Supply; date: string } | null>(null);
   const [editCards, setEditCards] = useState(false);
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [heroErr, setHeroErr] = useState(false);
@@ -253,7 +253,7 @@ export default function AttractionDetail({
           <div className="space-y-2.5">
             {supplies.map((s, i) => (
               <div key={s.libId + i} className="overflow-hidden rounded-[12px] border border-[#ece2d6] bg-[#fdfaf4] shadow-card">
-                <SupplyRow s={s} date={detailDate} onBook={setBooking} />
+                <SupplyRow s={s} date={detailDate} onBook={(sup, d) => setBooking({ s: sup, date: d })} />
               </div>
             ))}
           </div>
@@ -272,7 +272,8 @@ export default function AttractionDetail({
 
       {data && (
         <BookSheet
-          supply={booking}
+          supply={booking?.s ?? null}
+          date={booking?.date}
           data={data}
           barcodes={wallet.barcodes}
           onClose={() => setBooking(null)}
